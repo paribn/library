@@ -10,6 +10,7 @@
   --socialMediaColor: #241400;
   --footerBg: #391f00;
   --slideBooksIsNewbg: #eb5757;
+  --bkpgyear: #2f80ed;
   --textColorHead: #241400;
   --footerTextColor: #ffffff;
 
@@ -35,4 +36,6 @@
   --hmctlg: 0px 4px 11px 0px #00000040;
   --bkpganonims: 0px 4px 11px 0px #00000040;
   --srchpgdesc: 0px 4px 15px 0px #00000040;
+  --bkpgyearshadow: 0px 3px 8px 0px #e16a0030;
+  --bkpgback: 0px 3px 8px 0px #e16a0030;
 }
