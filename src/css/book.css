@@ -6,3 +6,72 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
+
+.section1 {
+  display: flex;
+  margin: 246px 182px 148px 212px;
+
+  width: 84%;
+  height: 529px;
+  gap: 141px;
+}
+.bookInfo {
+  width: 47%;
+  height: 516px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bookInfo :nth-child(1) {
+  margin-bottom: 80px;
+  margin-top: 10px;
+  width: 100px;
+  height: 29px;
+  border: 1px solid var(--allBtn);
+  border-radius: 4px;
+  background-color: var(--allBtn);
+  box-shadow: var(--bkpgback);
+  font-weight: var(--fontweight);
+  color: var(--admSrchRes);
+  cursor: pointer;
+}
+.bookInfo :nth-child(2) {
+  font-size: var(--slideBooksFooter);
+  font-weight: var(--fontweight);
+  box-shadow: var(--bkpgyearshadow);
+  background-color: var(--bkpgyear);
+  color: var(--admSrchRes);
+  border-radius: 3px;
+  width: 69px;
+  height: 23px;
+  align-content: center;
+  padding-left: 18px;
+  cursor: pointer;
+}
+.bookInfo :nth-child(3) {
+  height: 69px;
+  width: 47%;
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+
+  font-weight: var(--ctlgslidefntWeight);
+  font-size: var(--headerFontSize);
+}
+.bookInfo :nth-child(4) {
+  margin-bottom: 1rem;
+}
+.bookInfo :nth-child(5) {
+  margin-bottom: 2rem;
+}
+.bookInfo :nth-child(6) {
+  line-height: 1.9rem;
+}
+.bookInfo :nth-child(7) {
+  line-height: 1.9rem;
+}
+.bookinfoImg {
+  height: 529px;
+  width: 32%;
+}
