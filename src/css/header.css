@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  display: flex;
+  width: 20%;
+  gap: 10px;
+  padding: 20px;
+}
+.header_text h1 {
+  color: #720418;
+}
