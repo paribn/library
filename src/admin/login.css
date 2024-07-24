@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #720418;
+  background-color: var(--admBgandtable);
 }
 
 .header_box {
@@ -24,8 +24,8 @@ body {
 }
 
 .text_box :nth-child(1) {
-  font-weight: 900;
-  font-size: 14px;
+  font-weight: var(--fontweight);
+  font-size: var(--logoFontSize);
   line-height: 32px;
 }
 
@@ -36,7 +36,7 @@ body {
 
 .text_box :nth-child(3) {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--logoFontSize);
   line-height: 26px;
 }
 
@@ -63,8 +63,8 @@ main {
 }
 
 .container_input h1 {
-  font-weight: 700;
-  font-size: 44px;
+  font-weight: var(--ctlgslidefntWeight);
+  font-size: var(--joinUsFont);
   margin: 70px 130px 18px 130px;
 }
 
@@ -72,7 +72,7 @@ main {
   width: 80%;
   height: 74px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--bookPgFontparagraf);
   color: #797667;
 }
 
@@ -80,10 +80,10 @@ main {
   width: 80%;
   height: 74px;
   margin: 34px;
-  background-color: #e16a00;
+  background-color: var(--allBtn);
   border: 1px solid #cecece;
   border-radius: 5px;
   color: #fff;
-  font-weight: 700;
+  font-weight: var(--ctlgslidefntWeight);
   cursor: pointer;
 }
