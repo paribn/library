@@ -11,7 +11,6 @@
 .section1 {
   display: flex;
   margin: 246px 182px 148px 212px;
-
   width: 84%;
   height: 529px;
   gap: 141px;
@@ -58,7 +57,6 @@
   text-align: center;
   align-content: center;
   display: inline-block;
-
   font-weight: var(--ctlgslidefntWeight);
   font-size: var(--headerFontSize);
 }
