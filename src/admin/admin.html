@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https//fonts.googleapis.com" />
+    <link rel="preconnect" href="https//fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https//fonts.googleapis.com/css2?family=Montserratital,wght@0,100..900;1,100..900&family=Robotoital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/root.css" />
@@ -18,51 +18,146 @@
     <main>
       <section class="left_box">
         <div class="logo">
-        <div><img src="../img/books_logo.svg" alt="books logo" /></div>
-        <div class="text_box">
-          <p>LIBRARY</p>
-          <hr/>
-          <p>Admin Panel</p>
+          <div><img src="../img/books_logo.svg" alt="books logo" /></div>
+          <div class="text_box">
+            <p>LIBRARY</p>
+            <hr />
+            <p>Admin Panel</p>
+          </div>
         </div>
-      </div>
 
-      <div class="stacks_container">
-      <div class="stacks">
-        <img src="../img/book_stack.svg" alt="stack">
-        <p>Home</p>
-      </div>
-      <div class="stacks">
-        <img src="../img/book_stack.svg" alt="stack">
-        <p>Books</p>
-      </div>
-      <div class="stacks">
-        <img src="../img/book_stack.svg" alt="stack">
-        <p>About</p>
-      </div>
-      <div class="stacks">
-        <img src="../img/book_stack.svg" alt="stack">
-        <p>Join us</p>
-      </div>
-      <div class="stacks">
-        <img src="../img/book_stack.svg" alt="stack">
-        <p>Contact</p>
-      </div>
-      <div class="stacks"> 
-        <img src="../img/book_stack.svg" alt="stack">
-        <p>Logout</p>
-      </div>
-    </div>
+        <div class="stacks_container">
+          <div class="stacks">
+            <img src="../img/book_stack.svg" alt="stack" />
+            <p>Home</p>
+          </div>
+          <div class="stacks">
+            <img src="../img/book_stack.svg" alt="stack" />
+            <p>Books</p>
+          </div>
+          <div class="stacks">
+            <img src="../img/book_stack.svg" alt="stack" />
+            <p>About</p>
+          </div>
+          <div class="stacks">
+            <img src="../img/book_stack.svg" alt="stack" />
+            <p>Join us</p>
+          </div>
+          <div class="stacks">
+            <img src="../img/book_stack.svg" alt="stack" />
+            <p>Contact</p>
+          </div>
+          <div class="stacks">
+            <img src="../img/book_stack.svg" alt="stack" />
+            <p>Logout</p>
+          </div>
+        </div>
       </section>
 
-
       <section class="main_box">
-        <div class="profile">
-          <img src="../img/profile.svg" alt="profile">
+        <section class="profile">
+          <img src="../img/profile.svg" alt="profile" />
           <p>Admin</p>
-        </div>
+        </section>
 
         <p class="add">Add book</p>
 
+        <section class="search">
+          <p class="text">Search book</p>
+          <div class="searching_area">
+            <input placeholder="Search here" type="text" />
+            <button>
+              <img src="../img/search _icon.svg" alt="search icon" />
+            </button>
+          </div>
+          <div class="result_container">
+            <div class="result_box">
+              <img src="../img/clock.svg" alt="clock" />
+              <p>Dan Brown Davinci</p>
+            </div>
+            <div class="result_box">
+              <img src="../img/clock.svg" alt="clock" />
+              <p>Dan Brown Angel</p>
+            </div>
+          </div>
+        </section>
+
+        <p class="bookForm">Book form</p>
+
+        <section class="add_container">
+          <div class="addTexts">
+            <div class="bookName">
+              <label for="bookName">Book Name</label>
+              <input type="text" value="Angels" />
+            </div>
+            <div class="authorName">
+              <label for="authorName">Author Name</label>
+              <input type="text" value="Dan Brown" />
+            </div>
+            <div class="bookImageUrl">
+              <label for="bookImageUrl">Book Image Url</label>
+              <input type="text" value="Alex Smith" />
+            </div>
+            <div class="checkbox">
+              <div style="display: flex; gap: 5px">
+                <label for="isNew">New</label>
+                <input type="checkbox" />
+              </div>
+              <div style="display: flex; gap: 5px">
+                <label for="Bestseller">Bestseller</label>
+                <input type="checkbox" />
+              </div>
+            </div>
+            <div class="description">
+              <label for="description">Description</label>
+              <button class="plus_sign">&#43</button>
+              <!-- <input
+                type="text"
+                value="We work without holidays and weekends! Resident... We work without holidays and weekends! Resident... We work without holidays and weekends! Resident..."
+              /> -->
+              <textarea name="description" required>We work without holidays and weekends! Resident... We work without holidays and weekends! Resident... We work without holidays and weekends! Resident...</textarea>
+            </div>
+            <div class="bookType">
+              <label for="bookType">Book Type</label>
+              <select>
+                <option value="Fantastic">Fantastic</option>
+                <option value="Detective">Detective</option>
+                <option value="fiction">Fiction</option>
+                <option value="nonfiction">Nonfiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="thriller">Thriller</option>
+                <option value="romance">Romance</option>
+                <option value="science fiction">Science Fiction</option>
+                <option value="historical fiction">Historical Fiction</option>
+                <option value="young adult">Young Adult</option>
+                <option value="childrens">Children's</option>
+                <option value="biography">Biography</option>
+                <option value="autobiography">Autobiography</option>
+                <option value="history">History</option>
+                <option value="science">Science</option>
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="self help">Self Help</option>
+                <option value="cookbook">Cookbook</option>
+                <option value="travel">Travel</option>
+                <option value="art">Art</option>
+                <option value="music">Music</option>
+                <option value="sports">Sports</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="religion">Religion</option>
+                <option value="poetry">Poetry</option>
+                <option value="drama">Drama</option>
+                <option value="humor">Humor</option>
+                <option value="horror">Horror</option>
+                <option value="graphic novel">Graphic Novel</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button type="submit">Add</button>
+          </div>
+        </section>
+
+        
       </section>
     </main>
   </body>
