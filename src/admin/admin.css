@@ -270,3 +270,36 @@ main {
   width: 100%;
 }
 
+.plus {
+  display: flex;
+}
+
+#plus_sign {
+  width: 0%;
+  height: 0;
+  background-color: #FF8B00;
+  color: #000;
+  margin: 0 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store_container {
+  width: 90%;
+  height: 415px;
+  background-color: #fff;
+  margin: 18px 0 0 33px;
+  border-radius: 20px;
+}
+
+.abt_store {
+  font-size: var(--fontSize);
+  font-weight: 600;
+  margin: 0 0 20px 40px;
+}
+
+.abt_section {
+  margin: 161px 0 136px 0;
+}
