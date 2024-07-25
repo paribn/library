@@ -27,7 +27,7 @@
   margin-bottom: 80px;
   margin-top: 10px;
   width: 100px;
-  height: 29px;
+  padding: 5px 10px;
   border: 1px solid var(--allBtn);
   border-radius: 4px;
   background-color: var(--allBtn);
@@ -36,45 +36,53 @@
   color: var(--admSrchRes);
   cursor: pointer;
 }
-/* year of book */
+/* book img for responsive design */
+
 .bookInfo :nth-child(2) {
+  display: none;
+}
+
+/* year of book */
+.bookInfo :nth-child(3) {
   font-size: var(--slideBooksFooter);
   font-weight: var(--fontweight);
   box-shadow: var(--bkpgyearshadow);
   background-color: var(--bkpgyear);
   color: var(--admSrchRes);
   border-radius: 3px;
-  width: 69px;
-  height: 23px;
+  width: 70px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   align-content: center;
   padding-left: 18px;
   cursor: pointer;
 }
 /* title of book */
-.bookInfo :nth-child(3) {
-  height: 69px;
-  width: 47%;
-  text-align: center;
+.bookInfo :nth-child(4) {
   align-content: center;
   display: inline-block;
-  font-weight: var(--ctlgslidefntWeight);
   font-size: var(--headerFontSize);
+  margin-top: 1rem;
 }
 /* 2 years ago side */
-.bookInfo :nth-child(4) {
+.bookInfo :nth-child(5) {
   margin-bottom: 1rem;
+  font-size: var(--bookpgComment);
+  font-weight: var(--ctlgslidefntWeight);
+  line-height: 31.39px;
 }
 /* autor name */
-.bookInfo :nth-child(5) {
+.bookInfo :nth-child(6) {
   margin-bottom: 2rem;
 }
 /* describtion */
-.bookInfo :nth-child(6) {
+.bookInfo :nth-child(7) {
   line-height: 1.9rem;
 }
 /* moreover info */
-.bookInfo :nth-child(7) {
+.bookInfo :nth-child(8) {
   line-height: 1.9rem;
+  background-color: none;
 }
 /* image of book */
 .bookinfoImg {
@@ -135,4 +143,84 @@
 
 .anonim2 {
   margin-top: 43px;
+}
+
+/* mobile devices responsive design */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .section1 {
+    margin: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bookInfo {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+  }
+  .bookInfo :nth-child(1) {
+    width: 30%;
+    text-align: center;
+  }
+  .bookInfo :nth-child(2) {
+    display: block;
+    margin: 3rem;
+  }
+  .bookInfo :nth-child(3) {
+    width: 17%;
+    padding: 0;
+    text-align: center;
+  }
+  .bookInfo :nth-child(4) {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    margin-top: 2rem;
+    /* margin-left: -20px; */
+  }
+  .bookInfo :nth-child(5) {
+    display: none;
+  }
+  .bookInfo :nth-child(6) {
+    text-align: center;
+    font-weight: var(--ctlgslidefntWeight);
+    margin-top: 1rem;
+    /* margin-left: -40px; */
+  }
+  .bookInfo :nth-child(7) {
+    text-align: center;
+    /* margin-right: 45px; */
+  }
+  .bookInfo :nth-child(8) {
+    text-align: center;
+  }
+  .bookinfoImg {
+    display: none;
+  }
+
+  .section2 {
+    display: none;
+  }
+}
+
+/* tablets and desctops responsive design */
+@media only screen and (max-width: 1440px) {
+  .section1 {
+    margin: 20px;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+  }
+
+  .bookInfo > :nth-child(4) {
+    width: 100%;
+  }
+
+  .section2 {
+    margin-top: 150px;
+    margin-left: 30px;
+  }
+
+  .anonimcoment1 {
+    margin-bottom: 10px;
+  }
 }
