@@ -7,6 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Book describtion and Book img */
 .section1 {
   display: flex;
   margin: 246px 182px 148px 212px;
@@ -15,14 +16,14 @@
   height: 529px;
   gap: 141px;
 }
+/* only text side of book */
 .bookInfo {
   width: 47%;
   height: 516px;
-
   display: flex;
   flex-direction: column;
 }
-
+/* back button */
 .bookInfo :nth-child(1) {
   margin-bottom: 80px;
   margin-top: 10px;
@@ -36,6 +37,7 @@
   color: var(--admSrchRes);
   cursor: pointer;
 }
+/* year of book */
 .bookInfo :nth-child(2) {
   font-size: var(--slideBooksFooter);
   font-weight: var(--fontweight);
@@ -49,6 +51,7 @@
   padding-left: 18px;
   cursor: pointer;
 }
+/* title of book */
 .bookInfo :nth-child(3) {
   height: 69px;
   width: 47%;
@@ -59,19 +62,65 @@
   font-weight: var(--ctlgslidefntWeight);
   font-size: var(--headerFontSize);
 }
+/* 2 years ago side */
 .bookInfo :nth-child(4) {
   margin-bottom: 1rem;
 }
+/* autor name */
 .bookInfo :nth-child(5) {
   margin-bottom: 2rem;
 }
+/* describtion */
 .bookInfo :nth-child(6) {
   line-height: 1.9rem;
 }
+/* moreover info */
 .bookInfo :nth-child(7) {
   line-height: 1.9rem;
 }
+/* image of book */
 .bookinfoImg {
   height: 529px;
   width: 32%;
+}
+
+/* book comments */
+
+.section2 {
+  width: 58%;
+  margin-left: 18%;
+  background-color: lightblue;
+}
+
+/* send button and input */
+.sendComment {
+  display: flex;
+}
+/* input */
+.sendComment :nth-child(1) {
+  width: 53%;
+  height: 60px;
+}
+/* button */
+.sendComment :nth-child(2) {
+  width: 61px;
+  height: 60px;
+  margin-left: -3px;
+  background-color: var(--allBtn);
+  border: 1px solid var(--allBtn);
+  border-radius: 5px;
+}
+
+/* anonim comments */
+
+#anonim {
+  width: 57%;
+  height: 167px;
+  box-shadow: var(--bkpganonims);
+}
+.anonim1 {
+  margin-top: 53px;
+}
+.anonim2 {
+  margin-top: 43px;
 }
