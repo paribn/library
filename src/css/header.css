@@ -80,6 +80,7 @@ footer {
   color: var(--footerTextColor);
   margin-top: 133px;
   padding: 30px;
+  display: block;
 }
 .footer_contact {
   display: flex;
