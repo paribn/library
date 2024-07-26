@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -56,7 +56,6 @@ main {
   flex-direction: column;
   gap: 26px;
   margin: 10px 0 0 40px;
-  
 }
 
 .stacks {
@@ -73,62 +72,67 @@ main {
   justify-content: end;
   gap: 6px;
   margin: 48px 58px;
- }
+}
 
- .profile p {
+.profile p {
   font-weight: 400;
   font-size: var(--logoFontSize);
   color: var(--socialMediaColor);
- }
+}
 
- .add {
+.add {
   color: #333333;
   font-weight: 600;
   font-size: var(--fontSize);
   margin: 26px 33px;
- }
+}
 
- .search {
+.search {
   margin: 40px 35px;
- }
+}
 
- .text {
+.text {
   font-weight: 600;
   font-size: var(--bookPgFontparagraf);
   color: #333333;
- }
+}
 
- .searching_area {
+.searching_area {
   margin: 15px 0 6px 0;
   display: flex;
- }
+}
 
+.searching_area input {
+  width: 30%;
+  height: 41px;
+  border: 2px solid #391f007a;
+  border-radius: 34px;
+  font-size: var(--logoFontSize);
+  font-weight: 400;
+  color: #adadad;
+  padding-left: 33px;
+}
 
- .searching_area input {
- width: 30%;
- height: 41px;
- border: 2px solid #391F007A;
- border-radius: 34px;
- font-size: var(--logoFontSize);
- font-weight: 400;
- color: #ADADAD;
- padding-left: 33px;
- }
-
- .searching_area button {
-  width: 5%; 
+.searching_area button {
+  width: 5%;
   height: 40px;
-  background-color: #FF8B00;
+  background-color: #ff8b00;
   border: none;
   border-radius: 34px;
   margin: 0 7px;
-  cursor: pointer;  
- }
+  cursor: pointer;
+}
 
- .result_container {
+.result_container {
   background-color: var(--admSrchRes);
   width: 30%;
   height: 85px;
+
+  border-radius: 35px;
+}
+
+.result_box {
+=======
   border-radius: 35px;   
   overflow-y: auto;
  }
@@ -153,15 +157,14 @@ main {
 }
 
  .result_box {
+
   display: flex;
   gap: 24px;
   padding: 18px 0 0 36px;
   font-size: var(--logoFontSize);
   font-weight: 400;
-  color: #BCBCBC;
- }
-
-
+  color: #bcbcbc;
+}
 
 .add_container {
   width: 90%;
@@ -180,7 +183,7 @@ main {
 
 .addTexts {
   margin: 0 30px;
-  
+
   height: 570px;
   display: flex;
   flex-direction: column;
@@ -188,7 +191,7 @@ main {
   padding-top: 16px;
 }
 
-.bookName{
+.bookName {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -200,7 +203,6 @@ main {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-
 }
 
 .bookImageUrl {
@@ -208,7 +210,6 @@ main {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-
 }
 
 .description {
@@ -216,7 +217,6 @@ main {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-
 }
 
 .bookType {
@@ -224,12 +224,11 @@ main {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-
 }
 
 .addTexts button {
   width: 100%;
-  background-color: #FF8B00;
+  background-color: #ff8b00;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -243,13 +242,13 @@ main {
 .addTexts label {
   font-size: var(--bookpgComment);
   font-weight: 400;
-  }
+}
 
 .addTexts input {
   border: none;
   border-radius: 10px;
   box-shadow: var(--admformstore);
-  border-radius: 1px solid #E2E6EE;
+  border-radius: 1px solid #e2e6ee;
   padding: 8px 12px;
   height: 40px;
   font-size: var(--bookpgComment);
@@ -260,15 +259,14 @@ main {
   border: none;
   border-radius: 10px;
   box-shadow: var(--admformstore);
-  border-radius: 1px solid #E2E6EE;
+  border-radius: 1px solid #e2e6ee;
   padding: 8px 12px;
   height: 40px;
   font-size: var(--bookpgComment);
   font-weight: 400;
 }
 
-
-.checkbox  input {
+.checkbox input {
   height: 20px;
 }
 
@@ -282,7 +280,7 @@ main {
   border: none;
   border-radius: 10px;
   box-shadow: var(--admformstore);
-  border-radius: 1px solid #E2E6EE;
+  border-radius: 1px solid #e2e6ee;
   padding: 8px 12px;
   height: 89px;
   font-size: var(--bookpgComment);
@@ -297,7 +295,7 @@ main {
 #plus_sign {
   width: 0%;
   height: 0;
-  background-color: #FF8B00;
+  background-color: #ff8b00;
   color: #000;
   margin: 0 10px;
   padding: 10px;
