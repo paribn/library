@@ -59,7 +59,7 @@ header {
 /* last section */
 
 .social_media {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,9 @@ footer {
   color: var(--footerTextColor);
   margin-top: 133px;
   padding: 30px;
+
+  display: block;
+
 }
 .footer_contact {
   display: flex;
