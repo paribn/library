@@ -100,24 +100,35 @@
 /* send button and input */
 .sendComment {
   display: flex;
+  align-items: center;
   width: 80%;
-  height: 60px;
+  height: 80px;
 }
 /* input */
 .sendComment :nth-child(1) {
   width: 52%;
-  height: 60px;
+  height: 59px;
+}
+.sendComment :nth-child(1):focus {
+  font-size: var(--bookpgComment);
+  border: inset 2px solid var(--allBtn);
 }
 /* button */
 .sendComment :nth-child(2) {
   width: 61px;
-  height: 60px;
+  height: 61px;
   margin-left: -3px;
   background-color: var(--allBtn);
   border: 1px solid var(--allBtn);
   border-radius: 5px;
 }
-
+/* button */
+.sendComment :nth-child(2):hover {
+  opacity: 0.9;
+}
+.sendComment :nth-child(2):active {
+  opacity: 0.7;
+}
 /* anonim comments */
 
 #anonim {
@@ -151,6 +162,7 @@
     margin: 20px;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
   .bookInfo {
     margin: 0;
@@ -172,7 +184,7 @@
   }
   .bookInfo :nth-child(4) {
     display: inline-block;
-    width: 70%;
+    width: 100%;
     text-align: center;
     margin-top: 2rem;
     /* margin-left: -20px; */
@@ -203,7 +215,7 @@
 }
 
 /* tablets and desctops responsive design */
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
   .section1 {
     margin: 20px;
     flex-direction: row;
@@ -213,14 +225,19 @@
 
   .bookInfo > :nth-child(4) {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  .bookinfoImg {
+    margin-top: 90px;
+    margin-right: 0px;
+  }
   .section2 {
     margin-top: 150px;
     margin-left: 30px;
   }
 
-  .anonimcoment1 {
-    margin-bottom: 10px;
+  .comentnameTime {
+    margin-bottom: 20px;
   }
 }
