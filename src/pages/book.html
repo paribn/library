@@ -56,13 +56,19 @@
         <!-- Describtion -->
         <div class="bookInfo">
           <!--go back button -->
-          <button >&#60; Back</button>
+          <button>&#60; Back</button>
+          <img
+            class="rspnsivimgBook"
+            src="../img/bk&cntct&about/aboutbook.svg"
+            alt=""
+          />
+
           <!-- year of book -->
           <p>2017</p>
           <!-- book name -->
           <h1>Order in Chaos</h1>
           <!-- date of loaded -->
-          <p>2 days ago added</p>
+          <p id="loadedTime">2 days ago added</p>
           <!-- author -->
           <p>Konstantin Koptelov</p>
           <!-- Describtion -->
@@ -73,11 +79,15 @@
             selected delivery method. Orders over UAH 1000 are delivered free of
             charge *. You can see the available methods, exact terms and cost of
             delivery during checkout in the order basket, after selecting the
-            delivery city.
-            <p>More details </p> 
+            delivery city. <br />
+            <a href="#">More details &gt;&gt;</a>
           </p>
         </div>
-        <img class="bookinfoImg" src="../img/aboutbook.svg" alt="" />
+        <img
+          class="bookinfoImg"
+          src="../img/bk&cntct&about/aboutbook.svg"
+          alt=""
+        />
       </section>
       <section class="section2">
         <!-- send input and button -->
@@ -90,11 +100,11 @@
 
         <!-- anonim comment first -->
         <div id="anonim" class="anonim1">
-          <div >
+          <div class="comentnameTime">
             <h3>anonim</h3>
-            <p>18:32today</p>
+            <p>18:32 today</p>
           </div>
-          <p>
+          <p id="anonimcoment1" class="anonimComent">
             Woah, your project looks awesome! How long have you been coding for?
             I'm still new, but think I want to dive into React as well soon.
             Perhaps you can give me an insight on where I can learn React?
@@ -103,11 +113,11 @@
         </div>
         <!-- anonim comment second -->
         <div id="anonim" class="anonim2">
-          <div>
+          <div class="comentnameTime">
             <h3>anonim</h3>
             <p>2 days ago</p>
           </div>
-          <p>
+          <p class="anonimComent">
             Woah, your project looks awesome! How long have you been coding for?
             I'm still new, but think I want to dive into
           </p>
