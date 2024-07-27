@@ -25,16 +25,17 @@
 
 /* inputs sizes */
 .name_mail,
-.adress_phone {
+.address_phone {
   display: flex;
   width: 90%;
   margin: 15px auto;
   gap: 36px;
 }
 .name_mail input,
-.adress_phone input {
+.address_phone input {
   flex: 1;
   padding: 20px;
+  font-size: var(--cntcinputsize);
 }
 .send_message {
   display: flex;
@@ -46,11 +47,13 @@
 
 .send_message :nth-child(1) {
   padding: 20px;
+  font-size: var(--cntcinputsize);
 }
 .send_message :nth-child(2) {
   width: 40%;
   margin: 0 auto;
   padding: 15px;
-  font-size: var();
+  color: var(--admSrchRes);
+  font-size: var(--fontSize);
   background-color: var(--allBtn);
 }
