@@ -20,7 +20,7 @@
   font-size: var(--headerFontSize);
   font-weight: var(--fontweight);
   line-height: 70.63px;
-  margin-left: -74.5%;
+  margin-left: -73%;
 }
 
 /* inputs sizes */
@@ -34,7 +34,7 @@
 .name_mail input,
 .address_phone input {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   font-size: var(--cntcinputsize);
 }
 .send_message {
@@ -46,14 +46,27 @@
 }
 
 .send_message :nth-child(1) {
-  padding: 20px;
+  padding: 10px;
   font-size: var(--cntcinputsize);
 }
-.send_message :nth-child(2) {
+.send_btn {
   width: 40%;
   margin: 0 auto;
-  padding: 15px;
-  color: var(--admSrchRes);
+  padding: 10px;
+  border: 1px solid var(--allBtn);
+  color: var(--whiteclr);
   font-size: var(--fontSize);
+  background-color: var(--allBtn);
+  transition: background_color, color, 0.5s;
+}
+.send_btn:hover {
+  color: var(--allBtn);
+  background-color: var(--whiteclr);
+  border-color: var(--whiteclr);
+  box-shadow: 30px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.send_btn:active {
+  color: var(--whiteclr);
   background-color: var(--allBtn);
 }
