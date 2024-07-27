@@ -74,6 +74,7 @@ main {
   font-weight: 400;
   font-size: var(--bookPgFontparagraf);
   color: #797667;
+  padding: 0 10px;
 }
 
 .container_input button {
@@ -86,4 +87,172 @@ main {
   color: #fff;
   font-weight: var(--ctlgslidefntWeight);
   cursor: pointer;
+}
+
+/* media query */
+
+@media screen and  (min-width: 323px) and (max-width: 767px) {
+
+  .header_box {
+    margin: 20px 0 0 20px;
+    gap: 4px;
+  }
+
+  .text_box {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .text_box :nth-child(1) {
+    font-size: var(--logoFontSize);
+    line-height: 28px;
+  }
+
+  .text_box :nth-child(2) {
+    width: 28%;
+  }
+
+  .text_box :nth-child(3) {
+    font-size: var(--logoFontSize);
+    line-height: 24px;
+  }
+
+  .container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 96px 10px;
+  }
+
+  .container_input h1 {
+    font-size: var(--fontSize);
+    margin: 40px 20px 12px 20px;
+    text-align: center;
+  }
+
+  .input {
+    width: 80%;
+    height: 40px;
+    font-size: var(--bookpgComment);
+  }
+
+  .container_input button {
+    width: 80%;
+    height: 36px;
+    margin: 20px;
+  }
+
+  .container_input {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header_box {
+    margin: 20px 0 0 20px;
+    gap: 4px;
+  }
+
+  .text_box {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .text_box :nth-child(1) {
+    font-size: var(--mainFontSize);
+    line-height: 28px;
+  }
+
+  .text_box :nth-child(2) {
+    width: 16%;
+  }
+
+  .text_box :nth-child(3) {
+    font-size: var(--mainFontSize);
+    line-height: 24px;
+  }
+
+  .container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 96px 10px;
+  }
+
+  .container_input h1 {
+    font-size: var(--headerFontSize);
+    margin: 40px 20px 12px 20px;
+    text-align: center;
+  }
+
+  .input {
+    width: 80%;
+    height: 60px;
+    font-size: var(--bookpgComment);
+  }
+
+  .container_input button {
+    width: 80%;
+    height: 60px;
+    margin: 20px;
+  }
+
+  .container_input {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) { 
+  .header_box {
+    margin: 20px 0 0 20px;
+    gap: 4px;
+  }
+
+  .text_box {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .text_box :nth-child(1) {
+    font-size: var(--mainFontSize);
+    line-height: 28px;
+  }
+
+  .text_box :nth-child(2) {
+    width: 12%;
+  }
+
+  .text_box :nth-child(3) {
+    font-size: var(--mainFontSize);
+    line-height: 24px;
+  }
+
+  .container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 96px 10px;
+  }
+
+  .container_input h1 {
+    font-size: var(--joinUsFont);
+    margin: 40px 20px 12px 20px;
+    text-align: center;
+  }
+
+  .input {
+    width: 90%;
+    height: 60px;
+    font-size: var(--bookpgComment);
+  }
+
+  .container_input button {
+    width: 90%;
+    height: 60px;
+    margin: 20px;
+  }
+
+  .container_input {
+    width: 90%;
+  }
 }
