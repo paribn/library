@@ -9,6 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" href="../img/logo_red.svg" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/catalog.css" />
@@ -52,6 +66,57 @@
 
     <main>
       <section>
+        <div class="head_slide">
+          <div class="all_books">
+            <h2>All Books</h2>
+          </div>
+          <ul class="jenre">
+            <li>Fantastic</li>
+            <li>Self-development</li>
+            <li>Baby</li>
+            <li>Fiction</li>
+            <li>Science</li>
+            <li>Romance novel</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="slider_1">
+          <div class="books">
+            <img src="../img/catalog/image2.svg" alt="" />
+            <span>Konstantin Koptelov</span>
+            <a href="../pages/book.html">READ MORE</a>
+          </div>
+          <div class="books">
+            <img src="../img/catalog/image2.svg" alt="" />
+            <span>Konstantin Koptelov</span>
+            <a href="../pages/book.html">READ MORE</a>
+          </div>
+          <div class="books">
+            <img src="../img/catalog/image2.svg" alt="" />
+            <span>Konstantin Koptelov</span>
+            <a href="../pages/book.html">READ MORE</a>
+          </div>
+          <div class="books">
+            <img src="../img/catalog/image2.svg" alt="" />
+            <span>Konstantin Koptelov</span>
+            <a href="../pages/book.html">READ MORE</a>
+          </div>
+          <div class="books">
+            <img src="../img/catalog/image2.svg" alt="" />
+            <span>Konstantin Koptelov</span>
+            <a href="../pages/book.html">READ MORE</a>
+          </div>
+          <div class="books">
+            <img src="../img/catalog/image2.svg" alt="" />
+            <span>Konstantin Koptelov</span>
+            <a href="../pages/book.html">READ MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
         <div class="social_media">
           <div class="social_head">
             <p>Follow us on social media</p>
@@ -62,9 +127,9 @@
             <img src="../img/head&footer/inst.svg" alt="insta" />
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-
+    <!-- 
     <footer>
       <div class="footer_contact">
         <div class="footer_logo">
@@ -111,7 +176,36 @@
       <p>
         All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
       </p>
-    </footer>
+    </footer> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider_1").slick({
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: true,
+        });
+      });
+    </script>
     <script src="../api/catalog.js"></script>
   </body>
 </html>

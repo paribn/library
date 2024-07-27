@@ -132,8 +132,7 @@ main {
 }
 
 .result_box {
-=======
-  border-radius: 35px;   
+  border-radius: 35px;
   border-radius: 35px;
   overflow-y: auto;
 }
@@ -156,8 +155,6 @@ main {
 .result_container::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
- .result_box {
 
 .result_box {
   display: flex;
