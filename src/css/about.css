@@ -6,6 +6,78 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
-.section1 {
+/* main css  */
+
+.container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-store {
+  max-width: 60%;
+}
+
+.about-store h1 {
+  font-size: 36px;
+  color: #241400;
+}
+
+.about-store p {
+  width: 686px;
+  height: 253px;
+  top: 266px;
+  left: 215px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35.31px;
+  text-align: left;
+  color: #241400;
+}
+
+.book-images {
+  display: flex;
+  gap: 20px;
+}
+
+.book-images img {
+  width: 400px;
+  height: 310px;
+}
+
+/* Responsive Style */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .about-store {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .about-store h1 {
+      font-size: 28px;
+  }
+
+  .about-store p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+  .book-images {
+      justify-content: center;
+  }
+
+  .book-images img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+  }
 }
