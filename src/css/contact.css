@@ -7,12 +7,50 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.contact_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 112px auto 126px auto;
+  width: 80%;
+}
+/* Contact Us title */
 .Contact {
   font-size: var(--headerFontSize);
   font-weight: var(--fontweight);
   line-height: 70.63px;
+  margin-left: -74.5%;
 }
 
-.inputs{
-  
+/* inputs sizes */
+.name_mail,
+.adress_phone {
+  display: flex;
+  width: 90%;
+  margin: 15px auto;
+  gap: 36px;
+}
+.name_mail input,
+.adress_phone input {
+  flex: 1;
+  padding: 20px;
+}
+.send_message {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  width: 90%;
+  margin-top: 33px;
+}
+
+.send_message :nth-child(1) {
+  padding: 20px;
+}
+.send_message :nth-child(2) {
+  width: 40%;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: var();
+  background-color: var(--allBtn);
 }
