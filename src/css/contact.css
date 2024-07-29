@@ -15,27 +15,35 @@
   margin: 112px auto 126px auto;
   width: 80%;
 }
-/* Contact Us title */
+
+/* Contact title */
 .Contact {
   font-size: var(--headerFontSize);
   font-weight: var(--fontweight);
   line-height: 70.63px;
-  margin-left: -74.5%;
+  margin: 0;
+  text-align: left;
+  background-color: var(--yourBackgroundColor);
+  padding: 10px;
 }
 
 /* inputs sizes */
 .name_mail,
-.adress_phone {
+.address_phone {
   display: flex;
   width: 90%;
   margin: 15px auto;
   gap: 36px;
 }
+
 .name_mail input,
-.adress_phone input {
+.address_phone input {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
+  font-size: var(--cntcinputsize);
 }
+
+/* textarea and send button div */
 .send_message {
   display: flex;
   flex-direction: column;
@@ -44,13 +52,97 @@
   margin-top: 33px;
 }
 
-.send_message :nth-child(1) {
-  padding: 20px;
+.send_message textarea {
+  padding: 10px;
+  height: 133px;
+  font-size: var(--cntcinputsize);
 }
-.send_message :nth-child(2) {
+
+.send_btn {
   width: 40%;
   margin: 0 auto;
-  padding: 15px;
-  font-size: var();
+  padding: 10px;
+  border: 1px solid var(--allBtn);
+  color: var(--whiteclr);
+  font-size: var(--fontSize);
   background-color: var(--allBtn);
+  transition: all 0.15s;
+}
+
+.send_btn:hover {
+  opacity: 0.8;
+}
+
+.send_btn:active {
+  opacity: 0.5;
+  background-color: #b85600;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact_section {
+    width: 100%;
+  }
+
+  .Contact {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    margin-right: -10%;
+    font-size: var(--fontSize);
+    background-color: var(--yourBackgroundColor);
+  }
+
+  .name_mail,
+  .address_phone {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .name_mail input,
+  .address_phone input {
+    width: 100%;
+    font-size: var(--bookpgComment);
+  }
+
+  .send_message {
+    width: 100%;
+  }
+
+  .send_message textarea {
+    width: 90%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+  }
+
+  .send_btn {
+    width: 50%;
+    font-size: var(--logoFontSize);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact_section {
+    width: 80%;
+    text-align: left;
+  }
+  .Contact {
+    margin-right: -13%;
+  }
+
+  .name_mail input,
+  .address_phone input {
+    width: 60%;
+  }
+
+  .send_btn {
+    width: 50%;
+  }
 }
