@@ -6,3 +6,77 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
+/* whole sections */
+main {
+  display: flex;
+  flex-direction: column;
+}
+.search_section {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+.input_slider {
+  display: flex;
+  gap: 170px;
+}
+/* <!-- title of section --> */
+.search_title {
+  font-size: var(--headerFontSize);
+  font-weight: var(--ctlgslidefntWeight);
+  margin-bottom: 37px;
+}
+/* <!-- search input and submit button --> */
+.input_button {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.search_input {
+  width: 250px;
+  padding-left: 25px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #cecece;
+}
+.search_button {
+  height: 44px;
+  background-color: var(--allBtn);
+  border: 1px solid var(--allBtn);
+  color: #fff;
+  font-size: var(--mainFontSize);
+}
+.search_button:hover {
+  opacity: 0.8;
+}
+.search_button:active {
+  opacity: 0.5;
+}
+/* <!-- book slide --> */
+.slider {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  box-shadow: var(--bkpgback);
+}
+.slider img {
+  width: 40%;
+  margin-top: 12px;
+}
+/* <!-- text side of slider --> */
+.search_bookDesc {
+  text-align: left;
+  width: 630px;
+  align-items: center;
+  justify-content: center;
+}
+.search_bookDesc :nth-child(1) {
+  line-height: 47.08px;
+}
+.search_bookDesc :nth-child(2) {
+  line-height: 35.31px;
+}
+.search_bookDesc :nth-child(3) {
+  line-height: 27.47px;
+}
