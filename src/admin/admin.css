@@ -23,6 +23,21 @@ main {
   margin: 34px 0 0 32px;
 }
 
+.logo button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 46px;
+  width: 40%;
+  font-size: 36px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: none;
+}
+
 .text_box {
   color: #fff;
   margin: 12px 0;
@@ -58,13 +73,16 @@ main {
   margin: 10px 0 0 40px;
 }
 
-.stacks {
+.stacks button {
   display: flex;
   align-items: center;
   gap: 11px;
   color: #fff;
   font-weight: 400;
   font-size: var(--mainFontSize);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .profile {
@@ -78,6 +96,8 @@ main {
   font-weight: 400;
   font-size: var(--logoFontSize);
   color: var(--socialMediaColor);
+  display: flex;
+  align-items: center;
 }
 
 .add {
@@ -121,20 +141,24 @@ main {
   border-radius: 34px;
   margin: 0 7px;
   cursor: pointer;
-  }
+}
 
 .result_container {
   background-color: var(--admSrchRes);
   width: 30%;
   height: 85px;
-
+  overflow-y: auto;
   border-radius: 35px;
 }
 
 .result_box {
-
   border-radius: 35px;
-  overflow-y: auto;
+  display: flex;
+  gap: 24px;
+  padding: 18px 0 0 36px;
+  font-size: var(--logoFontSize);
+  font-weight: 400;
+  color: #bcbcbc;
 }
 
 .result_container::-webkit-scrollbar {
@@ -156,15 +180,6 @@ main {
   background: #555;
 }
 
-.result_box {
-  display: flex;
-  gap: 24px;
-  padding: 18px 0 0 36px;
-  font-size: var(--logoFontSize);
-  font-weight: 400;
-  color: #bcbcbc;
-}
-
 .add_container {
   width: 90%;
   height: 660px;
@@ -182,7 +197,6 @@ main {
 
 .addTexts {
   margin: 0 30px;
-
   height: 570px;
   display: flex;
   flex-direction: column;
@@ -303,6 +317,7 @@ main {
   align-items: center;
 }
 
+/** store */
 .store_container {
   width: 90%;
   height: 415px;
@@ -531,4 +546,535 @@ td {
 .contact_cntr tbody tr:nth-child(odd) {
   background-color: #fff;
   border-top: 2px solid #e6e7e9;
+}
+
+.book_store {
+  display: none;
+}
+
+.grey_box {
+  display: none;
+}
+
+/** media query */
+
+@media screen and (min-width: 323px) and (max-width: 767px) {
+  .main_box {
+    display: block;
+  }
+
+  .left_box,
+  .grey_box {
+    display: none;
+  }
+
+  .grey_box {
+    background-color: #241400b2;
+    width: 20%;
+  }
+
+  .left_box {
+    width: 80%;
+    height: 1500px;
+  }
+  .logo {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0 0 11px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo button {
+    background-color: transparent;
+    border: none;
+    height: 46px;
+    width: 40%;
+    font-size: 36px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: block;
+  }
+
+  .text_box {
+    color: #fff;
+    margin: 0;
+    width: 100%;
+  }
+
+  .text_box :nth-child(1) {
+    font-weight: var(--fontweight);
+    font-size: var(--logoFontSize);
+  }
+
+  .text_box :nth-child(2) {
+    width: 80%;
+    color: #ffffff96;
+  }
+
+  .text_box :nth-child(3) {
+    font-weight: 400;
+    font-size: var(--logoFontSize);
+  }
+
+  .stacks_container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 67px 0 0 20px;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  /*! book store */
+  .book_store {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 10px 0 66px 0;
+  }
+
+  .library {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0 0 11px;
+    align-items: center;
+  }
+
+  .library img {
+    margin-top: 8px;
+  }
+
+  .library_btn {
+    border: none;
+    background-color: transparent;
+    font-size: var(--headerFontSize);
+    font-weight: var(--ctlgslidefntWeight);
+    color: var(--socialMediaColor);
+  }
+
+  .text_box2 :nth-child(1) {
+    color: var(--admBgandtable);
+    font-weight: var(--fontweight);
+  }
+
+  .text_box2 :nth-child(2) {
+    width: 120px;
+  }
+
+  /*! search */
+
+  .add {
+    font-size: var(--ctlgHead);
+    margin: 0 0 0 13px;
+    width: 40%;
+  }
+
+  .search {
+    margin: 40px 13px;
+  }
+
+  .text {
+    font-weight: 600;
+    font-size: var(--bookpgComment);
+    color: #333333;
+    margin: 0 0 23px 0;
+  }
+
+  .searching_area {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  .searching_area input {
+    width: 90%;
+    height: 41px;
+    border: 2px solid #391f007a;
+    border-radius: 34px;
+    font-size: var(--logoFontSize);
+    font-weight: 400;
+    color: #adadad;
+    padding-left: 33px;
+  }
+
+  .searching_area button {
+    width: 15%;
+    height: 40px;
+    background-color: #ff8b00;
+    border: none;
+    border-radius: 36px;
+    margin: 0 7px;
+    cursor: pointer;
+  }
+
+  .result_container {
+    background-color: var(--admSrchRes);
+    width: 82%;
+    height: 84px;
+    border-radius: 35px;
+    margin-left: 5px;
+    overflow-y: auto;
+  }
+
+  .result_box {
+    border-radius: 35px;
+    display: flex;
+    gap: 24px;
+    padding: 18px 0 0 36px;
+    font-size: var(--logoFontSize);
+    font-weight: 400;
+    color: #bcbcbc;
+  }
+
+  .bookForm {
+    margin: 0 0 16px 13px;
+  }
+
+  .add_container {
+    width: 100%;
+    height: 660px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .abt_store {
+    font-size: var(--ctlgHead);
+    font-weight: 600;
+    margin: 0 0 20px 13px;
+  }
+  .store_container {
+    width: 100%;
+    height: 415px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  /*! join us */
+
+  .join_us {
+    width: 100%;
+    height: 268px;
+    margin: 0 0 290px 0;
+  }
+
+  .scroll {
+    overflow: auto;
+    height: 290px;
+    width: 100%;
+  }
+
+  .join_us p {
+    margin-left: 13px;
+  }
+
+  /*! BOOKs */
+
+  .table_container {
+    width: 100%;
+    height: 97px;
+    margin: 20px 0 398px 0;
+  }
+
+  .scroll2 {
+    overflow: auto;
+    height: 140px;
+  }
+
+  .table_container p {
+    margin-left: 13px;
+  }
+
+  .angels {
+    gap: 5px;
+
+    margin-top: 10px;
+  }
+
+  /*! contact_cntr */
+  .contact_cntr {
+    width: 100%;
+    height: 590px;
+    margin: 0 0 289px 0;
+  }
+
+  .scroll3 {
+    overflow: auto;
+    height: 540px;
+  }
+
+  .contact_cntr p {
+    margin-left: 13px;
+  }
+}
+
+/** tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main_box {
+    display: block;
+  }
+
+  .left_box,
+  .grey_box {
+    display: block;
+  }
+
+  .grey_box {
+    background-color: #241400b2;
+    width: 40%;
+    display: none;
+  }
+
+  .left_box {
+    width: 40%;
+    height: 3800px;
+  }
+  .logo {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0 0 11px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo button {
+    background-color: transparent;
+    border: none;
+    height: 46px;
+    width: 40%;
+    font-size: 36px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: none;
+  }
+
+  .text_box {
+    color: #fff;
+    margin: 0;
+    width: 100%;
+  }
+
+  .text_box :nth-child(1) {
+    font-weight: var(--fontweight);
+    font-size: var(--logoFontSize);
+  }
+
+  .text_box :nth-child(2) {
+    width: 70%;
+    color: #ffffff96;
+  }
+
+  .text_box :nth-child(3) {
+    font-weight: 400;
+    font-size: var(--logoFontSize);
+  }
+
+  .stacks_container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 67px 0 0 20px;
+  }
+
+  .profile {
+    display: block;
+    display: flex;
+  }
+
+  /*! book store */
+  .book_store {
+    display: none;
+  }
+
+  .library {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0 0 11px;
+    align-items: center;
+  }
+
+  .library img {
+    margin-top: 8px;
+  }
+
+  .library_btn {
+    border: none;
+    background-color: transparent;
+    font-size: var(--headerFontSize);
+    font-weight: var(--ctlgslidefntWeight);
+    color: var(--socialMediaColor);
+  }
+
+  .text_box2 :nth-child(1) {
+    color: var(--admBgandtable);
+    font-weight: var(--fontweight);
+  }
+
+  .text_box2 :nth-child(2) {
+    width: 120px;
+  }
+
+  /*! search */
+
+  .add {
+    font-size: var(--ctlgHead);
+    margin: 0 0 0 13px;
+    width: 40%;
+  }
+
+  .search {
+    margin: 40px 13px;
+  }
+
+  .text {
+    font-weight: 600;
+    font-size: var(--bookpgComment);
+    color: #333333;
+    margin: 0 0 23px 0;
+  }
+
+  .searching_area {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  .searching_area input {
+    width: 90%;
+    height: 41px;
+    border: 2px solid #391f007a;
+    border-radius: 34px;
+    font-size: var(--logoFontSize);
+    font-weight: 400;
+    color: #adadad;
+    padding-left: 33px;
+  }
+
+  .searching_area button {
+    width: 15%;
+    height: 40px;
+    background-color: #ff8b00;
+    border: none;
+    border-radius: 36px;
+    margin: 0 7px;
+    cursor: pointer;
+  }
+
+  .result_container {
+    background-color: var(--admSrchRes);
+    width: 82%;
+    height: 84px;
+    border-radius: 35px;
+    margin-left: 5px;
+    overflow-y: auto;
+  }
+
+  .result_box {
+    border-radius: 35px;
+    display: flex;
+    gap: 24px;
+    padding: 18px 0 0 36px;
+    font-size: var(--logoFontSize);
+    font-weight: 400;
+    color: #bcbcbc;
+  }
+
+  .bookForm {
+    margin: 0 0 16px 13px;
+  }
+
+  .add_container {
+    width: 100%;
+    height: 660px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .abt_store {
+    font-size: var(--ctlgHead);
+    font-weight: 600;
+    margin: 0 0 20px 13px;
+  }
+  .store_container {
+    width: 100%;
+    height: 415px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  /*! join us */
+
+  .join_us {
+    width: 100%;
+    height: 268px;
+    margin: 0 0 290px 0;
+  }
+
+  .scroll {
+    overflow: auto;
+    height: 290px;
+    width: 100%;
+  }
+
+  .join_us p {
+    margin-left: 13px;
+  }
+
+  /*! BOOKs */
+
+  .table_container {
+    width: 100%;
+    height: 97px;
+    margin: 20px 0 398px 0;
+  }
+
+  .scroll2 {
+    overflow: auto;
+    height: 140px;
+  }
+
+  .table_container p {
+    margin-left: 13px;
+  }
+
+  .angels {
+    gap: 5px;
+
+    margin-top: 10px;
+  }
+
+  /*! contact_cntr */
+  .contact_cntr {
+    width: 100%;
+    height: 590px;
+    margin: 0 0 289px 0;
+  }
+
+  .scroll3 {
+    overflow: auto;
+    height: 540px;
+  }
+
+  .contact_cntr p {
+    margin-left: 13px;
+  }
 }
