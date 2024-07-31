@@ -64,6 +64,8 @@ main {
 .main_box {
   background-color: #fffaf5;
   width: 100%;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .stacks_container {
@@ -411,6 +413,14 @@ td {
   margin: 20px 0 398px 36px;
 }
 
+.trash_edit button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: var(--bookpgComment);
+  margin-left: 5px;
+}
+
 .scroll2 {
   overflow-y: auto;
   height: 120px;
@@ -575,7 +585,7 @@ td {
 
   .left_box {
     width: 80%;
-    height: 1500px;
+    height: 100vh;
   }
   .logo {
     display: flex;
@@ -769,10 +779,10 @@ td {
     margin: 0 0 290px 0;
   }
 
-  .scroll {
+  .scroll table {
     overflow: auto;
-    height: 290px;
-    width: 100%;
+    height: 80px;
+    width: 700px;
   }
 
   .join_us p {
@@ -787,9 +797,14 @@ td {
     margin: 20px 0 398px 0;
   }
 
-  .scroll2 {
+  .scroll2 table {
     overflow: auto;
     height: 140px;
+    width: 700px;
+  }
+
+  .scroll2 {
+    height: 160px;
   }
 
   .table_container p {
@@ -797,11 +812,11 @@ td {
   }
 
   .angels {
-    gap: 5px;
+    gap: 5px;    
+    height: 90px;
+     }
 
-    margin-top: 10px;
-  }
-
+   
   /*! contact_cntr */
   .contact_cntr {
     width: 100%;
@@ -810,10 +825,14 @@ td {
   }
 
   .scroll3 {
-    overflow: auto;
-    height: 540px;
+    height: 268px;
   }
 
+  .scroll3 table {
+    overflow: auto;
+
+    width: 1200px;
+  }
   .contact_cntr p {
     margin-left: 13px;
   }
@@ -828,7 +847,7 @@ td {
 
   .left_box,
   .grey_box {
-    display: block;
+    display: block;    
   }
 
   .grey_box {
@@ -839,7 +858,7 @@ td {
 
   .left_box {
     width: 40%;
-    height: 3800px;
+    height: 100vh;
   }
   .logo {
     display: flex;
