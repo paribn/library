@@ -41,18 +41,15 @@
   border-radius: 10px;
 }
 
+/* Slider Show style */
 .slider_1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 62px;
   margin-top: 50px;
   padding: 0 20px;
 }
-.slider_1 .slick-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: auto; /* Ensure it doesn't collapse the height */
-}
+
 .books {
   display: flex;
   /* width: 184px; */

@@ -55,14 +55,28 @@
 
       <div class="responsive">
         <div class="responsive_join">
-          <img src="../img/head&footer/joinus.svg" alt="profile" />
+          <!-- <img src="../img/head&footer/joinus.svg" alt="profile" /> -->
 
-          <button>
+          <button class="btn_resp">
             <img src="../img/head&footer/responsive.svg" alt="" />
           </button>
         </div>
       </div>
     </header>
+    <section>
+      <div class="navbar_resp">
+        <button class="btn_close">
+          <img src="../img/head&footer/close.svg" alt="" />
+        </button>
+        <ul class="header_nav_resp">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./catalog.html">Catalog</a></li>
+          <li><a href="./about.html">About Store</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./search.html">Search</a></li>
+        </ul>
+      </div>
+    </section>
 
     <main>
       <section>
@@ -108,15 +122,12 @@
             <span>Konstantin Koptelov</span>
             <a href="../pages/book.html">READ MORE</a>
           </div>
-          <div class="books">
-            <img src="../img/catalog/image2.svg" alt="" />
-            <span>Konstantin Koptelov</span>
-            <a href="../pages/book.html">READ MORE</a>
-          </div>
         </div>
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
       </section>
 
-      <!-- <section>
+      <section>
         <div class="social_media">
           <div class="social_head">
             <p>Follow us on social media</p>
@@ -127,7 +138,7 @@
             <img src="../img/head&footer/inst.svg" alt="insta" />
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- 
     <footer>
@@ -177,35 +188,8 @@
         All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
       </p>
     </footer> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
-      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $(".slider_1").slick({
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          autoplay: true,
-          arrows: true,
-        });
-      });
-    </script>
+
+    <script src="../api/navbar.js"></script>
     <script src="../api/catalog.js"></script>
   </body>
 </html>

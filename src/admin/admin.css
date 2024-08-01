@@ -121,7 +121,7 @@ main {
   border-radius: 34px;
   margin: 0 7px;
   cursor: pointer;
-}
+  }
 
 .result_container {
   background-color: var(--admSrchRes);
@@ -132,7 +132,11 @@ main {
 }
 
 .result_box {
+<<<<<<< HEAD
   border-radius: 35px;
+=======
+  border-radius: 35px;   
+>>>>>>> be60af88760db0b960a8cd3a8b81a7319bbfed52
   border-radius: 35px;
   overflow-y: auto;
 }
@@ -156,6 +160,11 @@ main {
   background: #555;
 }
 
+<<<<<<< HEAD
+=======
+ 
+
+>>>>>>> be60af88760db0b960a8cd3a8b81a7319bbfed52
 .result_box {
   display: flex;
   gap: 24px;
