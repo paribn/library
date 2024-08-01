@@ -137,6 +137,27 @@ footer p {
 
 /* responsive dizayn */
 
+.navbar_resp {
+  display: none;
+
+  gap: 20px;
+  justify-content: end;
+  padding: 20px;
+}
+.header_nav_resp li {
+  margin-bottom: 18px;
+}
+.header_nav_resp li a {
+  color: white;
+}
+
+.btn_close {
+  border: none;
+  margin-bottom: 22px;
+  padding: 6px;
+  background: none;
+}
+
 .responsive {
   display: none;
 }
@@ -157,6 +178,14 @@ footer p {
   /* Mobil mode */
   .navbar {
     display: none;
+  }
+  .navbar_resp {
+    /* display: block; */
+    text-align: end;
+  }
+  .header_nav {
+    display: flex;
+    flex-direction: column;
   }
   .logo {
     width: 40%;

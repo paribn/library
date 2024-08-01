@@ -154,13 +154,13 @@ main {
 }
 
 .result_box {
+<<<<<<< HEAD
   border-radius: 35px;
-  display: flex;
-  gap: 24px;
-  padding: 18px 0 0 36px;
-  font-size: var(--logoFontSize);
-  font-weight: 400;
-  color: #bcbcbc;
+=======
+  border-radius: 35px;   
+>>>>>>> be60af88760db0b960a8cd3a8b81a7319bbfed52
+  border-radius: 35px;
+  overflow-y: auto;
 }
 
 .result_container::-webkit-scrollbar {
@@ -180,6 +180,20 @@ main {
 
 .result_container::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+<<<<<<< HEAD
+=======
+ 
+
+>>>>>>> be60af88760db0b960a8cd3a8b81a7319bbfed52
+.result_box {
+  display: flex;
+  gap: 24px;
+  padding: 18px 0 0 36px;
+  font-size: var(--logoFontSize);
+  font-weight: 400;
+  color: #bcbcbc;
 }
 
 .add_container {
