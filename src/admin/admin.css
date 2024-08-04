@@ -154,11 +154,6 @@ main {
 }
 
 .result_box {
-<<<<<<< HEAD
-  border-radius: 35px;
-=======
-  border-radius: 35px;   
->>>>>>> be60af88760db0b960a8cd3a8b81a7319bbfed52
   border-radius: 35px;
   overflow-y: auto;
 }
@@ -182,11 +177,6 @@ main {
   background: #555;
 }
 
-<<<<<<< HEAD
-=======
- 
-
->>>>>>> be60af88760db0b960a8cd3a8b81a7319bbfed52
 .result_box {
   display: flex;
   gap: 24px;
@@ -427,7 +417,7 @@ td {
   margin: 20px 0 398px 36px;
 }
 
-.trash_edit button{
+.trash_edit button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -790,7 +780,7 @@ td {
   .join_us {
     width: 100%;
     height: 268px;
-    margin: 0 0 290px 0;
+    margin: 0 0 290px 10px;
   }
 
   .scroll table {
@@ -808,7 +798,7 @@ td {
   .table_container {
     width: 100%;
     height: 97px;
-    margin: 20px 0 398px 0;
+    margin: 20px 0 398px 10px;
   }
 
   .scroll2 table {
@@ -826,11 +816,10 @@ td {
   }
 
   .angels {
-    gap: 5px;    
+    gap: 5px;
     height: 90px;
-     }
+  }
 
-   
   /*! contact_cntr */
   .contact_cntr {
     width: 100%;
@@ -861,7 +850,7 @@ td {
 
   .left_box,
   .grey_box {
-    display: block;    
+    display: block;
   }
 
   .grey_box {
