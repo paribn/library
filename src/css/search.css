@@ -43,7 +43,7 @@ main {
   padding-left: 30px;
   align-items: center;
   height: 75vh;
-  width: 57%;
+  width: 57% !important;
   box-shadow: var(--srchpgdesc);
   gap: 2.4rem;
   line-height: 35.31px;
@@ -70,7 +70,7 @@ main {
 
 /* input sides */
 .searching {
-  height: 7vh !important;
+  height: 7vh;
   font-size: var(--bookpgComment);
   background-color: var(--whiteclr);
   border: 1px solid var(--admFormBoxShadow);
@@ -112,7 +112,12 @@ main {
     margin: 0;
     height: auto;
   }
-
+  .btnSend:hover {
+    opacity: 1;
+  }
+  .btnSend:active {
+    opacity: 0.7;
+  }
   .slider {
     width: 90%;
     flex-direction: column;
@@ -144,51 +149,51 @@ main {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 769px) and (max-width: 1440px) {
   .hero {
-    flex-direction: row;
     gap: 2rem;
+    width: 60%;
   }
 
   .searchSection {
-    margin: 0 auto;
-    width: 76%;
+    width: 100%;
+    margin: 120px 60px 120px 120px;
     height: auto;
   }
 
   .slider {
-    width: 80%;
-    flex-direction: row;
     box-shadow: var(--srchpgdesc);
-    margin: 0 auto;
-    gap: 1rem;
-    padding: 2rem;
+    height: 30vh;
+    width: 100%;
   }
 
   .inputSide {
-    width: 34%;
+    width: 100%;
     height: 8vh;
     margin: 0 auto;
   }
 
   .bookName {
     font-size: 1.5rem;
+    width: 100%;
   }
 
   .author {
+    width: 100%;
     font-size: 1.2rem;
   }
 
   .describtion {
     font-size: 0.5rem;
     line-height: 1.5;
+    width: 100%;
   }
 
-  .lth,
+  /* .lth,
   .gth {
-    display: block;
-  }
+    /* display: block; */
+  /* } */
   .bookImg {
-    width: 10%;
+    width: 100%;
   }
 }

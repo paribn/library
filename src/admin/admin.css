@@ -64,6 +64,8 @@ main {
 .main_box {
   background-color: #fffaf5;
   width: 100%;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .stacks_container {
@@ -153,12 +155,7 @@ main {
 
 .result_box {
   border-radius: 35px;
-  display: flex;
-  gap: 24px;
-  padding: 18px 0 0 36px;
-  font-size: var(--logoFontSize);
-  font-weight: 400;
-  color: #bcbcbc;
+  overflow-y: auto;
 }
 
 .result_container::-webkit-scrollbar {
@@ -178,6 +175,15 @@ main {
 
 .result_container::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.result_box {
+  display: flex;
+  gap: 24px;
+  padding: 18px 0 0 36px;
+  font-size: var(--logoFontSize);
+  font-weight: 400;
+  color: #bcbcbc;
 }
 
 .add_container {
@@ -411,6 +417,14 @@ td {
   margin: 20px 0 398px 36px;
 }
 
+.trash_edit button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: var(--bookpgComment);
+  margin-left: 5px;
+}
+
 .scroll2 {
   overflow-y: auto;
   height: 120px;
@@ -575,7 +589,7 @@ td {
 
   .left_box {
     width: 80%;
-    height: 1500px;
+    height: 100vh;
   }
   .logo {
     display: flex;
@@ -766,13 +780,13 @@ td {
   .join_us {
     width: 100%;
     height: 268px;
-    margin: 0 0 290px 0;
+    margin: 0 0 290px 10px;
   }
 
-  .scroll {
+  .scroll table {
     overflow: auto;
-    height: 290px;
-    width: 100%;
+    height: 80px;
+    width: 700px;
   }
 
   .join_us p {
@@ -784,12 +798,17 @@ td {
   .table_container {
     width: 100%;
     height: 97px;
-    margin: 20px 0 398px 0;
+    margin: 20px 0 398px 10px;
+  }
+
+  .scroll2 table {
+    overflow: auto;
+    height: 140px;
+    width: 700px;
   }
 
   .scroll2 {
-    overflow: auto;
-    height: 140px;
+    height: 160px;
   }
 
   .table_container p {
@@ -798,8 +817,7 @@ td {
 
   .angels {
     gap: 5px;
-
-    margin-top: 10px;
+    height: 90px;
   }
 
   /*! contact_cntr */
@@ -810,10 +828,14 @@ td {
   }
 
   .scroll3 {
-    overflow: auto;
-    height: 540px;
+    height: 268px;
   }
 
+  .scroll3 table {
+    overflow: auto;
+
+    width: 1200px;
+  }
   .contact_cntr p {
     margin-left: 13px;
   }
@@ -839,7 +861,7 @@ td {
 
   .left_box {
     width: 40%;
-    height: 3800px;
+    height: 100vh;
   }
   .logo {
     display: flex;

@@ -6,7 +6,7 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
-/* main css  */
+
 
 .container {
   display: flex;
@@ -48,9 +48,9 @@
   height: 310px;
 }
 
-/* Responsive Style */
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+ 
+ @media only screen and (min-width: 320px) and (max-width: 768px) {
   .container {
       flex-direction: column;
       padding: 20px;
