@@ -87,6 +87,12 @@ main {
   cursor: pointer;
 }
 
+.stacks a {
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--mainFontSize);
+}
+
 .profile {
   display: flex;
   justify-content: end;
