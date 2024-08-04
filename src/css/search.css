@@ -6,77 +6,189 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
-/* whole sections */
 main {
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
-.search_section {
-  display: flex;
-  flex-direction: column;
-  padding: 100px;
-}
-.input_slider {
-  display: flex;
-  gap: 170px;
-}
-/* <!-- title of section --> */
-.search_title {
+.pageTitle {
+  margin-bottom: 1rem;
   font-size: var(--headerFontSize);
   font-weight: var(--ctlgslidefntWeight);
-  margin-bottom: 37px;
+  font-family: Montserrat;
+  line-height: 70.63px;
 }
-/* <!-- search input and submit button --> */
-.input_button {
+.hero {
   display: flex;
-  flex-direction: column;
-  gap: 34px;
+  gap: 3rem;
 }
-.search_input {
-  width: 250px;
-  padding-left: 25px;
-  height: 44px;
-  background-color: #fff;
-  border-radius: 3px;
-  border: 1px solid #cecece;
+.searchSection {
+  height: 90vh;
+  width: 100%;
+  margin: 134px 59px 124px 200px;
 }
-.search_button {
-  height: 44px;
-  background-color: var(--allBtn);
-  border: 1px solid var(--allBtn);
-  color: #fff;
-  font-size: var(--mainFontSize);
+.lth,
+.gth {
+  background-color: var(--whiteclr);
+  margin: 0;
+  cursor: pointer;
+  border: none;
 }
-.search_button:hover {
-  opacity: 0.8;
+.lth {
+  margin-right: -1rem;
 }
-.search_button:active {
-  opacity: 0.5;
+.gth {
+  margin-left: -1rem;
 }
-/* <!-- book slide --> */
 .slider {
   display: flex;
-  gap: 40px;
-  padding: 30px;
-  box-shadow: var(--bkpgback);
-}
-.slider img {
-  width: 40%;
-  margin-top: 12px;
-}
-/* <!-- text side of slider --> */
-.search_bookDesc {
-  text-align: left;
-  width: 630px;
+  padding-left: 30px;
   align-items: center;
-  justify-content: center;
-}
-.search_bookDesc :nth-child(1) {
-  line-height: 47.08px;
-}
-.search_bookDesc :nth-child(2) {
+  height: 75vh;
+  width: 57%;
+  box-shadow: var(--srchpgdesc);
+  gap: 2.4rem;
   line-height: 35.31px;
 }
-.search_bookDesc :nth-child(3) {
-  line-height: 27.47px;
+.bookName {
+  font-weight: var(--ctlgslidefntWeight);
+  font-size: var(--joinUsFont);
+}
+.author {
+  font-size: var(--mainFontSize);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.describtion {
+  width: 89%;
+}
+
+.inputSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 19%;
+}
+
+/* input sides */
+.searching {
+  height: 7vh !important;
+  font-size: var(--bookpgComment);
+  background-color: var(--whiteclr);
+  border: 1px solid var(--admFormBoxShadow);
+  border-radius: 4px;
+  padding-left: 15px;
+}
+.searching:focus {
+  border: inset 1px solid var(--allBtn);
+}
+.btnSend {
+  background-color: var(--allBtn);
+  font-size: var(--mainFontSize);
+  color: var(--whiteclr);
+  height: 7vh !important;
+  background-color: var(--allBtn);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15;
+}
+.btnSend:hover {
+  opacity: 0.8;
+}
+.btnSend:active {
+  opacity: 0.5;
+}
+
+/* Styles for screens between 320px and 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pageTitle {
+    margin-left: 1.5rem;
+  }
+  .searchSection {
+    margin: 0;
+    height: auto;
+  }
+
+  .slider {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    gap: 2rem;
+    margin-bottom: 15vh;
+    margin-top: 2vh;
+  }
+
+  .inputSide {
+    width: 90%;
+    height: 10vh;
+  }
+
+  .lth,
+  .gth {
+    display: none;
+  }
+  .bookName {
+    font-size: var(--ctlgHead);
+  }
+  .author {
+    font-size: var(--bookpgComment);
+  }
+  .describtion {
+    font-size: var(--slideBooksFooter);
+    line-height: normal;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .hero {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .searchSection {
+    margin: 0 auto;
+    width: 76%;
+    height: auto;
+  }
+
+  .slider {
+    width: 80%;
+    flex-direction: row;
+    box-shadow: var(--srchpgdesc);
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .inputSide {
+    width: 34%;
+    height: 8vh;
+    margin: 0 auto;
+  }
+
+  .bookName {
+    font-size: 1.5rem;
+  }
+
+  .author {
+    font-size: 1.2rem;
+  }
+
+  .describtion {
+    font-size: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .lth,
+  .gth {
+    display: block;
+  }
+  .bookImg {
+    width: 10%;
+  }
 }
