@@ -17,3 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     greyBox.style.display = 'none';
   });
 });
+
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+

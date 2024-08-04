@@ -32,22 +32,22 @@
 
         <div class="stacks_container">
           <div class="stacks">
-            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Home</button>
+            <button onclick="scrollToSection(`section1`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Home</button>
            </div>
           <div class="stacks">
-            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Books</button>
+            <button onclick="scrollToSection(`section2`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Books</button>
           </div>
           <div class="stacks">
-            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" />About</button>
+            <button onclick="scrollToSection(`section3`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />About</button>
           </div>
           <div class="stacks">
-            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Join us</button>
+            <button onclick="scrollToSection(`section4`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Join us</button>
           </div>
           <div class="stacks">
-            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Contact</button>
+            <button onclick="scrollToSection(`section5`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Contact</button>
           </div>
           <div class="stacks">
-            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Log out</button>
+            <button ><img src="../img/admn&lgn/book_stack.svg" alt="stack" /><a href="./login.html">Log out</a></button>
           </div>
         </div>
         
@@ -70,7 +70,7 @@
           </div>
         </section>
 
-        <section class="profile">               
+        <section id="section1"  class="profile">               
           <img src="../img/admn&lgn/profile.svg" alt="profile" />
           <p>Admin</p>        
         </section>
@@ -147,7 +147,7 @@
           </div>
         </section>
 
-        <section class="abt_section">
+        <section id="section3"  class="abt_section">
           <p class="abt_store">About Store</p>
           <div class="store_container"> 
             <div class="addTexts">           
@@ -170,7 +170,7 @@
         </div>
         </section>
         
-        <section class="join_section">
+        <section id="section4"  class="join_section">
           <div class="join_us">
             <p>Join Us</p>
             <div class="scroll">
@@ -210,7 +210,7 @@
         </div>
         </section>
 
-        <section>
+        <section id="section2">
           <div class="table_container">
             <p>Books</p>
             <div class="scroll2">
@@ -242,7 +242,7 @@
         </div>
         </section>
 
-        <section>
+        <section id="section5">
           <div class="contact_cntr">
             <p>Contact Us</p>
             <div class="scroll3">
