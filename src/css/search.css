@@ -9,6 +9,7 @@
 main {
   overflow-x: hidden;
 }
+/* head title of section */
 .pageTitle {
   margin-bottom: 1rem;
   font-size: var(--headerFontSize);
@@ -16,15 +17,18 @@ main {
   line-height: 70.63px;
   display: flex;
 }
+/* it contains only input and slider  */
 .hero {
   display: flex;
   gap: 3rem;
 }
+/* the whole section */
 .searchSection {
   height: 90vh;
   width: 100%;
   margin: 134px 59px 124px 200px;
 }
+/* left and right turning buttons */
 .lth,
 .gth {
   background-color: var(--whiteclr);
@@ -32,12 +36,14 @@ main {
   cursor: pointer;
   border: none;
 }
+
 .lth {
   margin-right: -1rem;
 }
 .gth {
   margin-left: -1rem;
 }
+/* slider div with img tag and p tags in it */
 .slider {
   display: flex;
   padding-left: 30px;
@@ -48,6 +54,7 @@ main {
   gap: 2.4rem;
   line-height: 35.31px;
 }
+/* text side of slider */
 .bookName {
   font-weight: var(--ctlgslidefntWeight);
   font-size: var(--joinUsFont);
@@ -61,7 +68,7 @@ main {
 .describtion {
   width: 89%;
 }
-
+/* input div with input and button in it */
 .inputSide {
   display: flex;
   flex-direction: column;
@@ -154,6 +161,7 @@ main {
     text-align: center;
   }
 }
+/* tablet version  */
 @media screen and (min-width: 769px) and (max-width: 1250px) {
   .searchSection {
     margin: 6%;
@@ -203,6 +211,7 @@ main {
     line-height: 2;
   }
 }
+/* desctop version */
 @media screen and (min-width: 1251px) and (max-width: 1440px) {
   .searchSection {
     margin-left: 8rem;
