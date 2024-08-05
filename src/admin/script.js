@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeButton = document.querySelector('.logo button');
 
   libraryBtn.addEventListener('click', () => {
-    mainBox.style.display = 'none';
+    mainBox.style.display = 'block';
     leftBox.style.display = 'block';
-    greyBox.style.display = 'block';
+    greyBox.style.display = 'none';  
+    
   });
 
   closeButton.addEventListener('click', () => {
