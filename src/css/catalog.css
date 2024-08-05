@@ -14,7 +14,9 @@
 .all_books {
   width: 20%;
   text-align: center;
+  color: var(--ctlgTextColor);
 }
+
 .jenre {
   display: flex;
   overflow-x: auto;
@@ -25,6 +27,7 @@
   width: calc(100% / 3); /* Show 3 items at a time */
   text-align: center;
   padding: 10px;
+  color: var(--ctlgTextColor);
 }
 
 .jenre::-webkit-scrollbar {
@@ -45,9 +48,14 @@
 .slider_1 {
   display: flex;
   justify-content: center;
-  gap: 62px;
+  gap: 42px;
   margin-top: 50px;
+  width: 100%;
+  overflow-x: scroll;
   padding: 0 20px;
+}
+.slider_1::-webkit-scrollbar {
+  display: none;
 }
 
 .books {
@@ -80,4 +88,30 @@
 .books img {
   width: 100%;
   height: auto;
+}
+.slide_show {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.prev,
+.next {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slide_title {
+  text-align: center;
+  padding: 10px 0;
+}
+.slide_title h2 {
+  font-weight: var(--fontweight);
+  font-size: var(--ctlgHead);
+  color: var(--ctlgTextColor);
+  line-height: 50px;
 }

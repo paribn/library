@@ -11,6 +11,12 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
+
+.active {
+  color: var(--navbarColor) !important;
+  text-decoration: underline;
+  font-weight: var(--ctlgslidefntWeight);
+}
 .logo {
   display: flex;
   width: 20%;
