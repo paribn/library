@@ -6,7 +6,7 @@
   --admSrcBorder: #391f00;
   --admFormBoxShadow: #9ea8bd;
   --admformBorder: #e2e6ee;
-  --whiteclr : #fff;
+  --whiteclr: #fff;
   --hmBtnShadow: #d66400;
   --socialMediaColor: #241400;
   --footerBg: #391f00;
@@ -14,6 +14,8 @@
   --bkpgyear: #2f80ed;
   --textColorHead: #241400;
   --footerTextColor: #ffffff;
+  --navbarColor: rgba(225, 106, 0, 1);
+  --ctlgTextColor: rgba(36, 20, 0, 1);
 
   /* fontsize & font-weight */
 
