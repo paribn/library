@@ -56,7 +56,7 @@ main {
   font-size: var(--mainFontSize);
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: var(--midlewight);
 }
 .describtion {
   width: 89%;
@@ -112,7 +112,7 @@ main {
   }
   .searchSection {
     margin: 0;
-    margin-bottom: 120px;
+    margin-bottom: 35vh;
     height: auto;
   }
   .btnSend:hover {
@@ -150,6 +150,78 @@ main {
   }
   .describtion {
     font-size: var(--slideBooksFooter);
+
     text-align: center;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1250px) {
+  .searchSection {
+    margin: 6%;
+    margin-top: 5vh;
+  }
+  .inputSide {
+    width: 22%;
+    height: 10vh;
+  }
+  .hero {
+    gap: 1rem;
+    width: 100%;
+  }
+  .lth {
+    margin-right: 1rem;
+  }
+  .gth {
+    margin-left: 1rem;
+  }
+  .slider {
+    width: 56%;
+    gap: 0.7rem;
+    height: 34vh;
+    padding-right: 1rem;
+  }
+  .bookImg {
+    margin-right: 0;
+  }
+  .bookName {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    margin-bottom: 3px;
+  }
+  .author {
+    font-size: var(--slideBooksFooter);
+    font-weight: var(--midlewight);
+    margin: 0;
+    line-height: normal;
+  }
+  .describtion {
+    margin: 0;
+    width: 90%;
+    font-size: 10px;
+    margin-top: 1rem;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1251px) and (max-width: 1440px) {
+  .searchSection {
+    margin-left: 8rem;
+    margin-top: 6vh;
+  }
+
+  .inputSide {
+    width: 20%;
+    margin-right: -3rem;
+  }
+  .searching,
+  .btnSend {
+    height: 4vh;
+  }
+  .describtion {
+    width: 90%;
+  }
+  .slider {
+    width: 60%;
+    height: 36vh;
   }
 }

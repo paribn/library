@@ -14,6 +14,8 @@
   --bkpgyear: #2f80ed;
   --textColorHead: #241400;
   --footerTextColor: #ffffff;
+  --navbarColor: rgba(225, 106, 0, 1);
+  --ctlgTextColor: rgba(36, 20, 0, 1);
 
   /* fontsize & font-weight */
 
@@ -22,6 +24,7 @@
   --joinUsFont: 44px;
   --mainFontSize: 18px;
   --fontSize: 30px;
+  --midlewight :500;
   --cntcinputsize: 23px;
   --bookName: 25px;
   --headerFontSize: 36px;
