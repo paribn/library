@@ -32,7 +32,7 @@
 
         <div class="stacks_container">
           <div class="stacks">
-            <button onclick="scrollToSection(`homeScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Home</button>
+            <button><img src="../img/admn&lgn/book_stack.svg" alt="stack" /><a href="../../index.html">Home</a></button>
            </div>
           <div class="stacks">
             <button onclick="scrollToSection(`booksScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Books</button>
@@ -70,7 +70,7 @@
           </div>
         </section>
 
-        <section id="homeScroll"  class="profile">               
+        <section class="profile">               
           <img src="../img/admn&lgn/profile.svg" alt="profile" />
           <p>Admin</p>        
         </section>
@@ -181,6 +181,7 @@
                         <th>#</th>
                         <th>Full Name</th>
                         <th>Email Address</th>
+                        <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -188,21 +189,29 @@
                         <td>1</td>
                         <td>Audrey Mckinney</td>
                         <td>lisa.watson@example.com</td>
+                        <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                          <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Savannah Howard</td>
                         <td>jeff.brown@example.com</td>
+                        <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                          <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Morris Cooper</td>
                         <td>terra.hamilton@example.com</td>
+                        <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                          <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Victoria Lane</td>
                         <td>deanna.curtis@example.com</td>
+                        <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                          <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
                     </tr>                                        
                 </tbody>
             </table>
@@ -254,6 +263,7 @@
                 <th>Address</th>
                 <th>Email Address</th>
                 <th>Phone Number</th>
+                <th>Edit</th>
               </tr>
             </thead>
             <tbody>
@@ -263,6 +273,8 @@
                 <td>1473 Ranchview Dr undefined San Jose</td>
                 <td>lisa.watson@example.com</td>
                 <td>(209) 555-0104</td>
+                <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                  <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
               </tr>
               <tr>
                 <td>2</td>
@@ -270,6 +282,8 @@
                 <td>8445 Railroad St undefined Tampa</td>
                 <td>jeff.brown@example.com</td>
                 <td>(201) 555-0124</td>
+                <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                  <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
               </tr>
               <tr>
                 <td>3</td>
@@ -277,6 +291,8 @@
                 <td>8584 W Sherman Dr undefined Desoto</td>
                 <td>terra.hamilton@example.com</td>
                 <td>(505) 555-0125</td>
+                <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                  <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
               </tr>
               <tr>
                 <td>4</td>
@@ -284,6 +300,8 @@
                 <td>1921 Ranchview Dr undefined San Francisco</td>
                 <td>deanna.curtis@example.com</td>
                 <td>(704) 555-0127</td>
+                <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
+                  <button><i class="fa-solid fa-pen-to-square"></i></button></td> 
               </tr>
             </tbody>
             </table>
