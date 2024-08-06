@@ -20,11 +20,8 @@
 .Contact {
   font-size: var(--headerFontSize);
   font-weight: var(--fontweight);
-  line-height: 70.63px;
-  margin: 0;
-  text-align: left;
+  margin-bottom: 1.5rem;
   background-color: var(--yourBackgroundColor);
-  padding: 10px;
 }
 
 /* inputs sizes */
@@ -78,7 +75,7 @@
   background-color: #b85600;
 }
 
-@media only screen and (max-width: 768px) {
+@media  screen and (min-width: 320px) and (max-width: 768px) {
   .contact_section {
     width: 100%;
   }
@@ -122,27 +119,14 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .contact_section {
-    width: 80%;
-    text-align: left;
+    margin: 0;
   }
-  .Contact {
-    margin-right: -13%;
+  .name_mail {
+    margin: 0;
   }
-
-  .name_mail input,
-  .address_phone input {
-    width: 60%;
-  }
-
-  .send_btn {
-    width: 50%;
+  .address_phone {
+    margin: 0;
   }
 }
