@@ -3,28 +3,34 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  background-color: #fffaf5;
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
 .head_slide {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: -8%;
   margin-top: 100px;
+  margin-bottom: 2rem;
+  gap: 5rem;
 }
-.all_books {
-  width: 20%;
+.all_books h2 {
   text-align: center;
+  font-weight: var(--fontweight);
   color: var(--ctlgTextColor);
 }
 
 .jenre {
   display: flex;
+  gap: 2rem;
   overflow-x: auto;
 }
 
 .jenre li {
   flex: 0 0 auto;
-  width: calc(100% / 3); /* Show 3 items at a time */
+  width: calc(100% / 4); /* Show 3 items at a time */
   text-align: center;
   padding: 10px;
   color: var(--ctlgTextColor);
@@ -36,7 +42,7 @@
 }
 
 .jenre::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fffaf5;
 }
 
 .jenre::-webkit-scrollbar-thumb {
@@ -49,7 +55,7 @@
   display: flex;
   justify-content: center;
   gap: 42px;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
   overflow-x: scroll;
   padding: 0 20px;
@@ -60,9 +66,11 @@
 
 .books {
   display: flex;
+  height: 40vh;
   /* width: 184px; */
   /* height: 352px; */
   flex-direction: column;
+  border: 1px solid #f0ecec;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -95,7 +103,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 15vh;
 }
 .prev,
 .next {
@@ -114,4 +122,42 @@
   font-size: var(--ctlgHead);
   color: var(--ctlgTextColor);
   line-height: 50px;
+}
+@media screen and (min-width: 323px) and (max-width: 768px) {
+  .headSection {
+    margin: 0;
+    padding: 0;
+  }
+  .head_slide {
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    font-size: 23px;
+    flex-direction: column;
+  }
+  .all_books {
+    margin-left: -35%;
+  }
+  .jenre {
+    gap: 0.5rem;
+    width: 60%;
+    margin-left: -13%;
+  }
+  .jenre li {
+    font-size: 11px;
+    width: 38%;
+    margin: 0;
+  }
+  .jenre {
+    width: 100%;
+  }
+}
+@media screen and (min-width:1250px) and (max-width:1440px) {
+  .books{
+    height: 20vh;
+   
+  }
+  /* .head_slide{
+
+  } */
 }
