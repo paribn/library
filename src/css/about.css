@@ -7,77 +7,137 @@
   font-family: "Montserrat", sans-serif;
 }
 
-
 .container {
   display: flex;
-  justify-content: space-between;
+  padding-left: 6rem;
+  gap: 4rem;
+  justify-content: center;
   align-items: center;
-  padding: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 111px 0 338px 0;
 }
 
-.about-store {
-  max-width: 60%;
+.about_store {
+  display: flex;
+
+  flex-direction: column;
+  width: 45%;
+  gap: 1rem;
 }
 
-.about-store h1 {
-  font-size: 36px;
-  color: #241400;
+.about_store h1 {
+  font-size: var(--headerFontSize);
+  color: var(--textColorHead);
 }
 
-.about-store p {
-  width: 686px;
-  height: 253px;
-  top: 266px;
-  left: 215px;
-  font-size: 18px;
+.about_store p {
+  font-size: var(--mainFontSize);
   font-weight: 400;
   line-height: 35.31px;
-  text-align: left;
-  color: #241400;
+  color: var(--textColorHead);
 }
-
-.book-images {
-  display: flex;
-  gap: 20px;
+.book_images {
+  margin-top: 7rem;
 }
-
-.book-images img {
-  width: 400px;
-  height: 310px;
+.mobileVersion {
+  display: none;
 }
-
-
- 
- @media only screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
-      flex-direction: column;
-      padding: 20px;
+    width: 100%;
+    margin: 0;
+    margin-top: -5%;
+    margin-bottom: 20vh;
+    padding: 0;
+    flex-direction: column;
   }
-
-  .about-store {
-      max-width: 100%;
-      text-align: center;
+  .about_store h1 {
+    font-size: var(--bookName);
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: var(--fontweight);
   }
-
-  .about-store h1 {
-      font-size: 28px;
+  .about_store p {
+    font-size: var(--slideBooksFooter);
+    line-height: 23.54px;
+    text-align: center;
+    width: 75%;
   }
-
-  .about-store p {
-      width: 100%;
-      font-size: 16px;
-      line-height: 1.5;
+  .book_images {
+    width: 100%;
+    text-align: center;
   }
-
-  .book-images {
-      justify-content: center;
+  .book_images img {
+    width: 90%;
   }
-
-  .book-images img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
+  .about_store {
+    width: 100%;
+    align-items: center;
+  }
+  .defaultContainer {
+    display: none;
+  }
+  .mobileVersion {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1250px) {
+  .container {
+    width: 100%;
+    margin: 4rem 0 10rem 0;
+    padding: 0;
+  }
+  .defaultContainer {
+    flex-direction: row;
+    display: flex;
+    gap: 2rem;
+    margin-right: 1.8rem;
+  }
+  .book_images {
+    width: 100%;
+  }
+  .book_images img {
+    width: 100%;
+    margin-top: -5rem;
+  }
+  .about_store {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_store h1 {
+    text-align: center;
+    font-size: var(--ctlgHead);
+    font-weight: var(--fontweight);
+  }
+  .about_store p {
+    font-size: var(--bookpgComment);
+    line-height: 1.5rem;
+    text-align: center;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 1440px) {
+  .defaultContainer {
+    width: 100%;
+    display: flex;
+    margin-left: -3rem;
+    gap: 3rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .about_store {
+    width: 100%;
+    justify-content: center;
+  }
+  .about_store p {
+    width: 670px;
+  }
+  .book_images {
+    width: 100%;
+    display: flex;
+  }
+  .book_images img {
+    width: 100%;
   }
 }

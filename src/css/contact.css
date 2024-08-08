@@ -24,7 +24,7 @@
   background-color: var(--yourBackgroundColor);
 }
 
-/* inputs sizes */
+/* Inputs sizes */
 .name_mail,
 .address_phone {
   display: flex;
@@ -40,7 +40,7 @@
   font-size: var(--cntcinputsize);
 }
 
-/* textarea and send button div */
+/* Textarea and send button div */
 .send_message {
   display: flex;
   flex-direction: column;
@@ -52,6 +52,7 @@
 .send_message textarea {
   padding: 10px;
   height: 133px;
+  width: 100%;
   font-size: var(--cntcinputsize);
 }
 
@@ -75,16 +76,16 @@
   background-color: #b85600;
 }
 
-@media  screen and (min-width: 320px) and (max-width: 768px) {
+/* Mobile version */
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .contact_section {
     width: 100%;
   }
 
   .Contact {
     width: 100%;
-    margin-left: 0;
-    text-align: left;
-    margin-right: -10%;
+    display: flex;
+    justify-content: center;
     font-size: var(--fontSize);
     background-color: var(--yourBackgroundColor);
   }
@@ -92,7 +93,6 @@
   .name_mail,
   .address_phone {
     flex-direction: column;
-    gap: 15px;
   }
 
   .name_mail input,
@@ -107,10 +107,10 @@
 
   .send_message textarea {
     width: 90%;
-    height: 50px;
+    height: 10vh;
     margin-left: auto;
     margin-right: auto;
-    font-size: 10px;
+    font-size: var(--bookpgComment);
   }
 
   .send_btn {
@@ -119,14 +119,19 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+/* Tablet and laptop version */
+@media screen and (min-width: 769px) and (max-width: 1250px) {
   .contact_section {
-    margin: 0;
+    width: 100%;
   }
-  .name_mail {
-    margin: 0;
-  }
+  .name_mail,
   .address_phone {
-    margin: 0;
+    width: 90%;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .send_message {
+    width: 90%;
+    text-align: center;
   }
 }
