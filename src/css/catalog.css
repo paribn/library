@@ -58,7 +58,7 @@
   margin-top: 30px;
   width: 100%;
   overflow-x: scroll;
-  padding: 0 20px;
+  padding: 20px;
 }
 .slider_1::-webkit-scrollbar {
   display: none;

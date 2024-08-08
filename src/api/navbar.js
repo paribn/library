@@ -1,16 +1,30 @@
 const btn_resp = document.querySelector(".btn_resp");
 const navbar_resp = document.querySelector(".navbar_resp");
 const btn_close = document.querySelector(".btn_close");
+const joinUsContainer = document.querySelector(".joinUsContainer");
+const joinUsForm = document.querySelector(".joinUsForm");
+const closeJoinUs = document.querySelector(".closeJoinUs");
+const join = document.querySelector(".join");
 
 btn_resp.addEventListener("click", function () {
   console.log("open");
   navbar_resp.style.display = "block";
-  document.body.style.backgroundColor = "rgba(36, 20, 0, 0.9)";
-  // document.body.style.backdropFilter = "blur(10px)";
 });
 
 btn_close.addEventListener("click", function () {
-  console.log("ss close");
   navbar_resp.style.display = "";
-  document.body.style.backgroundColor = "";
+});
+
+joinUsContainer.addEventListener("click", (e) => {
+  if (e.target === joinUsContainer) {
+    joinUsContainer.style = "display:none";
+  }
+});
+
+closeJoinUs.addEventListener("click", () => {
+  joinUsContainer.style = "display:none";
+});
+
+join.addEventListener("click", () => {
+  joinUsContainer.style = "display:flex";
 });

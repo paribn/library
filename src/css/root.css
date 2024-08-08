@@ -16,7 +16,7 @@
   --footerTextColor: #ffffff;
   --navbarColor: rgba(225, 106, 0, 1);
   --ctlgTextColor: rgba(36, 20, 0, 1);
-
+  --backgroundoColor: rgba(0, 0, 0, 0.5);
   /* fontsize & font-weight */
 
   --fontweight: 900;
@@ -24,7 +24,7 @@
   --joinUsFont: 44px;
   --mainFontSize: 18px;
   --fontSize: 30px;
-  --midlewight :500;
+  --midlewight: 500;
   --cntcinputsize: 23px;
   --bookName: 25px;
   --headerFontSize: 36px;
@@ -44,5 +44,10 @@
   --srchpgdesc: 0px 4px 15px 0px #00000040;
   --bkpgyearshadow: 0px 3px 8px 0px #e16a0030;
   --bkpgback: 0px 3px 8px 0px #e16a0030;
+}
+
+
+body {
+  background-color: #fffaf5;
 }
 
