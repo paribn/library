@@ -80,20 +80,17 @@
         <section class="search">
           <p class="text">Search book</p>
           <div class="searching_area">
-            <input placeholder="Search here" type="text" />
-            <button class="srcicn">
+            <input id="searchInput" placeholder="Search here" type="text" />
+            <button id="searchBtn" class="srcicn">
               <img src="../img/admn&lgn/search _icon.svg" alt="search icon" />
             </button>
           </div>
-          <div class="result_container">
+          <div id="resultArea" class="result_container">
             <div class="result_box">
               <img src="../img/admn&lgn/clock.svg" alt="clock" />
-              <p>Dan Brown Davinci</p>
+              <p></p>
             </div>
-            <div class="result_box">
-              <img src="../img/admn&lgn/clock.svg" alt="clock" />
-              <p>Dan Brown Angel</p>
-            </div>           
+                     
           </div>
         </section>
 
@@ -311,7 +308,7 @@
 
       </section>
     </main>
-
+    <script src="./main.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
