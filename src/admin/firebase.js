@@ -32,6 +32,7 @@ function writeUserData(name, password) {
     password: password,
   });
 }
+
 writeUserData("admin", "adminpas");
 
 export async function getData(dbName) {
