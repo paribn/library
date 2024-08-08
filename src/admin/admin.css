@@ -157,11 +157,17 @@ main {
   height: 85px;
   overflow-y: auto;
   border-radius: 35px;
+  display: none;
+  padding-bottom: 15px;
 }
 
 .result_box {
   border-radius: 35px;
   overflow-y: auto;
+}
+
+.result_box p{
+  cursor: pointer;
 }
 
 .result_container::-webkit-scrollbar {

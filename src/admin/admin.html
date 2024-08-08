@@ -103,19 +103,15 @@
         <section class="search">
           <p class="text">Search book</p>
           <div class="searching_area">
-            <input placeholder="Search here" type="text" />
-            <button class="srcicn">
+            <input id="searchInput" placeholder="Search here" type="text" />
+            <button id="searchBtn" class="srcicn">
               <img src="../img/admn&lgn/search _icon.svg" alt="search icon" />
             </button>
           </div>
-          <div class="result_container">
+          <div id="resultArea" class="result_container">
             <div class="result_box">
               <img src="../img/admn&lgn/clock.svg" alt="clock" />
-              <p>Dan Brown Davinci</p>
-            </div>
-            <div class="result_box">
-              <img src="../img/admn&lgn/clock.svg" alt="clock" />
-              <p>Dan Brown Angel</p>
+              <p></p>
             </div>
           </div>
         </section>
@@ -373,8 +369,7 @@ We work without holidays and weekends! Resident... We work without holidays and 
         </section>
       </section>
     </main>
-
-    <script type="module" src="./admin.js"></script>
+    <script src="./main.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
