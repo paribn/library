@@ -55,6 +55,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
 }
 .join button {
   border: none;
@@ -226,7 +227,18 @@ footer p {
   font-weight: 700;
   padding: 30px 0;
 }
-.joinUsForm button {
+.closeJoinUs {
+  border: none;
+  padding: 14px;
+  background: none;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  right: 24px;
+}
+
+.joinUsLogin {
   width: 100%;
   height: 74px;
   border: 1px solid #cecece;
