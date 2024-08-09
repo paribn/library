@@ -55,6 +55,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
 }
 .join button {
   border: none;
@@ -134,7 +135,11 @@ footer p {
   font-size: var(--slideBooksFooter);
   margin: 4px;
 }
-
+.popular li,
+.cash li,
+.help li {
+  padding: 2px;
+}
 .help span,
 .cash span,
 .popular span {
@@ -145,11 +150,14 @@ footer p {
 
 .navbar_resp {
   display: none;
-
-  gap: 20px;
-  justify-content: end;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36, 20, 0, 0.9);
   padding: 20px;
 }
+
 .header_nav_resp li {
   margin-bottom: 18px;
 }
@@ -179,7 +187,65 @@ footer p {
 .resp_li li a {
   color: var(--footerTextColor);
 }
+.joinUsContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--backgroundoColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  transition: 0.5s;
+}
 
+.joinUsForm {
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 38px;
+  border-radius: 4px;
+  text-align: center;
+  gap: 10px;
+  width: 40%;
+}
+.joinUsForm input {
+  width: 100%;
+  outline: none;
+  height: 74px;
+  margin-bottom: 34px;
+  border: 1px solid #cecece;
+  font-size: 20px;
+  padding-left: 54px;
+}
+.joinUsForm p {
+  font-size: var(--joinUsFont);
+  font-weight: 700;
+  padding: 30px 0;
+}
+.closeJoinUs {
+  border: none;
+  padding: 14px;
+  background: none;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  right: 24px;
+}
+
+.joinUsLogin {
+  width: 100%;
+  height: 74px;
+  border: 1px solid #cecece;
+  background-color: var(--navbarColor);
+  color: white;
+  font-size: 19px;
+}
 @media only screen and (min-width: 323px) and (max-width: 767px) {
   /* Mobil mode */
   .navbar {
@@ -213,8 +279,9 @@ footer p {
   }
   header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 12px;
   }
   .header_text hr {
     width: 100px;
@@ -259,5 +326,11 @@ footer p {
   }
   .footer_text h2 {
     font-size: var(--logoFontSize);
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1440px) {
+  .navbar_resp {
+    display: none;
   }
 }

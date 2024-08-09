@@ -9,7 +9,13 @@
       href="https//fonts.googleapis.com/css2?family=Montserratital,wght@0,100..900;1,100..900&family=Robotoital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/root.css" />
     <link rel="icon" href="../img/logo_red.svg" />
     <link rel="stylesheet" href="./admin.css" />
@@ -17,62 +23,79 @@
   </head>
   <body>
     <main>
-      
       <section class="left_box">
         <div class="logo">
-          <div><img src="../img/admn&lgn/books_logo.svg" alt="books_logo" /></div>
+          <div>
+            <img src="../img/admn&lgn/books_logo.svg" alt="books_logo" />
+          </div>
           <div class="text_box">
             <p>LIBRARY</p>
             <hr />
             <p>Admin Panel</p>
           </div>
-          <button>&#10005</button>
+          <button>&#10005;</button>
         </div>
-         
 
         <div class="stacks_container">
           <div class="stacks">
-            <button onclick="scrollToSection(`homeScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Home</button>
-           </div>
-          <div class="stacks">
-            <button onclick="scrollToSection(`booksScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Books</button>
+            <button>
+              <img src="../img/admn&lgn/book_stack.svg" alt="stack" /><a
+                href="../../index.html"
+                >Home</a
+              >
+            </button>
           </div>
           <div class="stacks">
-            <button onclick="scrollToSection(`abtScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />About</button>
+            <button onclick="scrollToSection(`booksScroll`)">
+              <img src="../img/admn&lgn/book_stack.svg" alt="stack" />Books
+            </button>
           </div>
           <div class="stacks">
-            <button onclick="scrollToSection(`joinScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Join us</button>
+            <button onclick="scrollToSection(`abtScroll`)">
+              <img src="../img/admn&lgn/book_stack.svg" alt="stack" />About
+            </button>
           </div>
           <div class="stacks">
-            <button onclick="scrollToSection(`contactScroll`)"><img src="../img/admn&lgn/book_stack.svg" alt="stack" />Contact</button>
+            <button onclick="scrollToSection(`joinScroll`)">
+              <img src="../img/admn&lgn/book_stack.svg" alt="stack" />Join us
+            </button>
           </div>
           <div class="stacks">
-            <button ><img src="../img/admn&lgn/book_stack.svg" alt="stack" /><a href="./login.html">Log out</a></button>
+            <button onclick="scrollToSection(`contactScroll`)">
+              <img src="../img/admn&lgn/book_stack.svg" alt="stack" />Contact
+            </button>
+          </div>
+          <div class="stacks">
+            <button>
+              <img src="../img/admn&lgn/book_stack.svg" alt="stack" /><a
+                href="./login.html"
+                >Log out</a
+              >
+            </button>
           </div>
         </div>
-        
       </section>
       <section class="grey_box"></section>
       <section class="main_box">
-       
-
         <section class="book_store">
           <div class="library">
-            <div><img src="../img/admn&lgn/book_logo2.svg" alt="books_logo" /></div>
+            <div>
+              <img src="../img/admn&lgn/book_logo2.svg" alt="books_logo" />
+            </div>
             <div class="text_box2">
               <p>LIBRARY</p>
               <hr />
               <p>Book store</p>
-            </div>            
+            </div>
           </div>
           <div>
-            <button class="library_btn">&#9776</button>
+            <button class="library_btn">&#9776;</button>
           </div>
         </section>
 
-        <section id="homeScroll"  class="profile">               
+        <section class="profile">
           <img src="../img/admn&lgn/profile.svg" alt="profile" />
-          <p>Admin</p>        
+          <p>Admin</p>
         </section>
 
         <p class="add">Add book</p>
@@ -80,20 +103,16 @@
         <section class="search">
           <p class="text">Search book</p>
           <div class="searching_area">
-            <input placeholder="Search here" type="text" />
-            <button class="srcicn">
+            <input id="searchInput" placeholder="Search here" type="text" />
+            <button id="searchBtn" class="srcicn">
               <img src="../img/admn&lgn/search _icon.svg" alt="search icon" />
             </button>
           </div>
-          <div class="result_container">
+          <div id="resultArea" class="result_container">
             <div class="result_box">
               <img src="../img/admn&lgn/clock.svg" alt="clock" />
-              <p>Dan Brown Davinci</p>
+              <p></p>
             </div>
-            <div class="result_box">
-              <img src="../img/admn&lgn/clock.svg" alt="clock" />
-              <p>Dan Brown Angel</p>
-            </div>           
           </div>
         </section>
 
@@ -125,175 +144,232 @@
             </div>
             <div class="description">
               <label for="description">Description</label>
-              
+
               <!-- <input
                 type="text"
                 value="We work without holidays and weekends! Resident... We work without holidays and weekends! Resident... We work without holidays and weekends! Resident..."
               /> -->
-              <textarea name="description" required>We work without holidays and weekends! Resident... We work without holidays and weekends! Resident... We work without holidays and weekends! Resident...</textarea>
+              <textarea name="description" required>
+We work without holidays and weekends! Resident... We work without holidays and weekends! Resident... We work without holidays and weekends! Resident...</textarea
+              >
             </div>
             <div class="bookType">
               <div class="plus">
-              <label for="bookType">Book Type</label>
-              <button id="plus_sign">&#43</button>
-            </div>
+                <label for="bookType">Book Type</label>
+                <button id="plus_sign">&#43;</button>
+              </div>
               <select>
                 <option value="Fantastic">Fantastic</option>
                 <option value="Detective">Detective</option>
-                            
               </select>
             </div>
             <button type="submit">Add</button>
           </div>
         </section>
 
-        <section id="abtScroll"  class="abt_section">
+        <section id="abtScroll" class="abt_section">
           <p class="abt_store">About Store</p>
-          <div class="store_container"> 
-            <div class="addTexts">           
-            
-                <div class="bookName">
+          <div class="store_container">
+            <div class="addTexts">
+              <div class="bookName">
                 <label for="title">Title</label>
-                <input type="text"  name="title"  value="About Store">
+                <input type="text" name="title" value="About Store" />
               </div>
               <div class="authorName">
                 <label for="image-url">Book Image Url</label>
-                <input type="url"  name="image-url"  value="https://image.url/">
+                <input type="url" name="image-url" value="https://image.url/" />
               </div>
               <div class="description">
                 <label for="description2">Description</label>
-                <textarea  name="description2"> We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...</textarea>
+                <textarea name="description2">
+ We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...</textarea
+                >
               </div>
-                <button type="submit">About info add</button>
-            
+              <button type="submit">About info add</button>
+            </div>
           </div>
-        </div>
         </section>
-        
-        <section id="joinScroll"  class="join_section">
+
+        <section id="joinScroll" class="join_section">
           <div class="join_us">
             <p>Join Us</p>
             <div class="scroll">
-            <table>
-              
+              <table>
                 <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Full Name</th>
-                        <th>Email Address</th>
-                    </tr>
+                  <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>Edit</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Audrey Mckinney</td>
-                        <td>lisa.watson@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Savannah Howard</td>
-                        <td>jeff.brown@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Morris Cooper</td>
-                        <td>terra.hamilton@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Victoria Lane</td>
-                        <td>deanna.curtis@example.com</td>
-                    </tr>                                        
+                  <tr>
+                    <td>1</td>
+                    <td>Audrey Mckinney</td>
+                    <td>lisa.watson@example.com</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Savannah Howard</td>
+                    <td>jeff.brown@example.com</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Morris Cooper</td>
+                    <td>terra.hamilton@example.com</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Victoria Lane</td>
+                    <td>deanna.curtis@example.com</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
+            </div>
           </div>
-        </div>
         </section>
 
         <section id="booksScroll">
           <div class="table_container">
             <p>Books</p>
             <div class="scroll2">
-            <table>
+              <table>
                 <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Title</th>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>Author</th>             
-                         <th>Edit</th>     
-                    </tr>
-                    
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Author</th>
+                    <th>Edit</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td class="angels"><img src="../img/admn&lgn/angels.svg" alt="Angels & Demons">Angels</td>
-                        <td>Lorem ipsum test...</td>
-                        <td>Detectiv</td>
-                        <td>Dan Brown</td>  
-                        <td class="trash_edit"> <button><i class="fa-duotone fa-solid fa-trash-can"></i></button>
-                          <button><i class="fa-solid fa-pen-to-square"></i></button></td>                      
-                    </tr>
+                  <tr>
+                    <td>1</td>
+                    <td class="angels">
+                      <img
+                        src="../img/admn&lgn/angels.svg"
+                        alt="Angels & Demons"
+                      />Angels
+                    </td>
+                    <td>Lorem ipsum test...</td>
+                    <td>Detectiv</td>
+                    <td>Dan Brown</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
+            </div>
           </div>
-        </div>
         </section>
 
         <section id="contactScroll">
           <div class="contact_cntr">
             <p>Contact Us</p>
             <div class="scroll3">
-            <table>
-              <thead>
-                <tr>
-                <th>#</th>
-                <th>Full Name</th>
-                <th>Address</th>
-                <th>Email Address</th>
-                <th>Phone Number</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Audrey Mckinney</td>
-                <td>1473 Ranchview Dr undefined San Jose</td>
-                <td>lisa.watson@example.com</td>
-                <td>(209) 555-0104</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Savannah Howard</td>
-                <td>8445 Railroad St undefined Tampa</td>
-                <td>jeff.brown@example.com</td>
-                <td>(201) 555-0124</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Morris Cooper</td>
-                <td>8584 W Sherman Dr undefined Desoto</td>
-                <td>terra.hamilton@example.com</td>
-                <td>(505) 555-0125</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Victoria Lane</td>
-                <td>1921 Ranchview Dr undefined San Francisco</td>
-                <td>deanna.curtis@example.com</td>
-                <td>(704) 555-0127</td>
-              </tr>
-            </tbody>
-            </table>
-          </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Audrey Mckinney</td>
+                    <td>1473 Ranchview Dr undefined San Jose</td>
+                    <td>lisa.watson@example.com</td>
+                    <td>(209) 555-0104</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Savannah Howard</td>
+                    <td>8445 Railroad St undefined Tampa</td>
+                    <td>jeff.brown@example.com</td>
+                    <td>(201) 555-0124</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Morris Cooper</td>
+                    <td>8584 W Sherman Dr undefined Desoto</td>
+                    <td>terra.hamilton@example.com</td>
+                    <td>(505) 555-0125</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Victoria Lane</td>
+                    <td>1921 Ranchview Dr undefined San Francisco</td>
+                    <td>deanna.curtis@example.com</td>
+                    <td>(704) 555-0127</td>
+                    <td class="trash_edit">
+                      <button>
+                        <i class="fa-duotone fa-solid fa-trash-can"></i>
+                      </button>
+                      <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
-
       </section>
     </main>
-
+    <script src="./main.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
