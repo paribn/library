@@ -16,7 +16,8 @@
   gap: 5rem;
 }
 .all_books h2 {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: var(--fontweight);
   color: var(--ctlgTextColor);
 }
@@ -135,8 +136,10 @@
     flex-direction: column;
   }
   .all_books {
-    margin-left: -35%;
+    width: 90%;
+    text-align: left;
   }
+
   .jenre {
     gap: 0.5rem;
     width: 60%;
@@ -158,4 +161,8 @@
   /* .head_slide{
 
   } */
+@media screen and (min-width: 1250px) and (max-width: 1500px) {
+  .books {
+   height: 23vh;
+  }
 }
