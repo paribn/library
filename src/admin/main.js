@@ -6,6 +6,7 @@ const bookNameInput = document.querySelector(".addBookName");
 const authorNameInput = document.querySelector(".addAuthorName");
 const bookImageUrlInput = document.querySelector(".bookImgUrl");
 const descBookInput = document.querySelector(".descBook");
+const genreSelect = document.querySelector("#genreSelect");
 
 const bookGenres = [
   "Adventure",
@@ -28,7 +29,12 @@ const bookGenres = [
   "Western",
   "Young Adult",
 ];
-
+bookGenres.forEach((genre) => {
+  let option = document.createElement("option");
+  option.value = genre;
+  option.textContent = genre;
+  genreSelect.appendChild(option);
+});
 searchBtn.addEventListener("click", () => {
   let inputValue = searchInput.value;
   fetchData(inputValue);
@@ -69,7 +75,7 @@ function addData(items) {
         aryData.volumeInfo.description
           ? aryData.volumeInfo.description.replace(/"/g, "&quot;")
           : "No description available"
-      }">
+      }"
               <img src="../img/admn&lgn/clock.svg" alt="clock" />
               <p>${aryData.volumeInfo.title}</p>
             </div>
