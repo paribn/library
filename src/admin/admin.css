@@ -166,7 +166,7 @@ main {
   overflow-y: auto;
 }
 
-.result_box p{
+.result_box p {
   cursor: pointer;
 }
 
@@ -603,10 +603,10 @@ td {
   .left_box {
     width: 80%;
     height: 100vh;
-    position: absolute;  
+    position: absolute;
     z-index: 1;
-    box-shadow: 155px 0 0  #241400b2;   
-   }
+    box-shadow: 155px 0 0 #241400b2;
+  }
 
   .logo {
     display: flex;
@@ -734,7 +734,6 @@ td {
     border-radius: 34px;
     font-size: var(--logoFontSize);
     font-weight: 400;
-    color: #adadad;
     padding-left: 33px;
   }
 

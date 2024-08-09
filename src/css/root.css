@@ -45,3 +45,7 @@
   --bkpgyearshadow: 0px 3px 8px 0px #e16a0030;
   --bkpgback: 0px 3px 8px 0px #e16a0030;
 }
+
+body {
+  background-color: #fffaf5;
+}
