@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #fffaf5;
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
@@ -152,10 +151,9 @@
     width: 100%;
   }
 }
-@media screen and (min-width:1250px) and (max-width:1440px) {
-  .books{
+@media screen and (min-width: 1250px) and (max-width: 1440px) {
+  .books {
     height: 20vh;
-   
   }
   /* .head_slide{
 

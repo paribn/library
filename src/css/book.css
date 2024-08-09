@@ -217,12 +217,12 @@
 /* tablets and desctops responsive design */
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   .section1 {
-    margin: 6vh  auto 6vh 10% ;
+    margin: 6vh auto 6vh 10%;
     flex-direction: row;
     gap: 80px;
     width: 100%;
   }
- 
+
   .bookInfo > :nth-child(4) {
     width: 100%;
     margin-left: auto;
