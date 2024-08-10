@@ -1,3 +1,5 @@
+import { pushData } from "./firebase.js";
+
 const searchInput = document.querySelector("#searchInput");
 const searchBtn = document.querySelector("#searchBtn");
 const resultContainer = document.querySelector(".result_container");
@@ -7,6 +9,10 @@ const authorNameInput = document.querySelector(".addAuthorName");
 const bookImageUrlInput = document.querySelector(".bookImgUrl");
 const descBookInput = document.querySelector(".descBook");
 const genreSelect = document.querySelector("#genreSelect");
+const addBookBtn = document.querySelector(".addBookBtn");
+const isBest = document.querySelector(".isBest");
+const isNewCheck = document.querySelector(".isNewCheck");
+const genreAdd = document.querySelector(".genreAdd");
 
 const bookGenres = [
   "Adventure",
@@ -29,6 +35,7 @@ const bookGenres = [
   "Western",
   "Young Adult",
 ];
+
 bookGenres.forEach((genre) => {
   let option = document.createElement("option");
   option.value = genre;
@@ -38,6 +45,61 @@ bookGenres.forEach((genre) => {
 searchBtn.addEventListener("click", () => {
   let inputValue = searchInput.value;
   fetchData(inputValue);
+});
+
+/// add book form
+
+addBookBtn.addEventListener("click", function () {
+  let bookTitleAdd = bookNameInput.value;
+  let authorAdd = authorNameInput.value;
+  let addImg = bookImageUrlInput.value;
+  let addDect = descBookInput.value;
+  let inNew = isNewCheck.checked;
+  let addisBest = isBest.checked;
+
+  let isEmpty = false;
+
+  for (let i = 0; i < genreSelect.length; i++) {
+    genreSelect[i].style = "border:1px solid black";
+  }
+
+  for (let j = 0; j < genreSelect.length; j++) {
+    if (genreSelect[j].value === "") {
+      genreSelect[j].style = "border: 1px solid red";
+      isEmpty = true;
+    }
+  }
+
+  if (isEmpty) {
+    alert("Please fill in all fields");
+    return;
+  }
+
+  let genreArr = [];
+  let genreSelect = genreAdd;
+  for (let i = 0; i < genreSelect.length; i++) {
+    genreArr.push(genreSelect[i].value);
+  }
+
+  let date = new Date();
+  let dateStr = `${date.getFullYear()}${String(date.getMonth() + 1).padStart(
+    2,
+    0
+  )}${String(date.getDate()).padStart(2, 0)}`;
+
+  let newBook = {
+    title: bookTitleAdd,
+    author: authorAdd,
+    description: addDect,
+    img: addImg,
+    isNew: inNew,
+    isBestSeller: addisBest,
+    genre: genreArr,
+    addDate: dateStr,
+  };
+
+  pushData("books/", newBook);
+  alert("Book added succesfuly");
 });
 
 async function fetchData(searchData) {

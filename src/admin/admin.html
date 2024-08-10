@@ -135,20 +135,16 @@
             <div class="checkbox">
               <div style="display: flex; gap: 5px">
                 <label for="isNew">New</label>
-                <input type="checkbox" />
+                <input class="isNewCheck" type="checkbox" />
               </div>
               <div style="display: flex; gap: 5px">
                 <label for="Bestseller">Bestseller</label>
-                <input type="checkbox" />
+                <input class="isBest" type="checkbox" />
               </div>
             </div>
             <div class="description bestDect">
               <label for="description">Description</label>
 
-              <!-- <input
-                type="text"
-                value="We work without holidays and weekends! Resident... We work without holidays and weekends! Resident... We work without holidays and weekends! Resident..."
-              /> -->
               <textarea class="descBook" name="description" required>
               </textarea>
             </div>
@@ -157,11 +153,11 @@
                 <label for="bookType">Book Type</label>
                 <button id="plus_sign">&#43;</button>
               </div>
-              <select id="genreSelect">
+              <select id="genreSelect" class="genreAdd">
                 <option value="Fantastic"></option>
               </select>
             </div>
-            <button type="submit">Add</button>
+            <button class="addBookBtn" type="submit">Add</button>
           </div>
         </section>
 
