@@ -170,14 +170,12 @@ main {
   .describtion {
     font-size: 16px;
     line-height: 26px;
-    width: 100%;
-    background-color: lightblue;
+    width: 100%;    
   }
   .bookText {
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: aquamarine;
+    text-align: center;    
   }
 
   .leftBtn,

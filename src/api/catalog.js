@@ -11,11 +11,11 @@ sliders.forEach((slider, index) => {
 
   nextButtons[index].addEventListener("click", () => {
     slider.style.scrollBehavior = "smooth";
-    slider.scrollLeft += 900;
+    slider.scrollLeft += 230;
   });
 
   prevButtons[index].addEventListener("click", () => {
     slider.style.scrollBehavior = "smooth";
-    slider.scrollLeft -= 900;
+    slider.scrollLeft -= 230;
   });
 });
