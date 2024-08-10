@@ -1,15 +1,35 @@
-const getbookName = document.querySelector(".bookName");
-const getauthorName = document.querySelector(".author");
-const getDescribtion = document.querySelector(".describtion");
-const getLeftbtn = document.querySelector(".lth");
-const getRightbtn = document.querySelector(".gth");
-const getbookImg = document.querySelector(".bookImg");
+const leftBtn = document.querySelector(".leftBtn");
+const rightBtn = document.querySelector(".rightBtn");
+const sliderContainer = document.querySelector(".sliderContainer");
+const getInput = document.querySelector(".searchInput");
+const Btn = document.querySelector(".sendBtn");
+//& C A R O U S E L
+let scrollAmount = 0;
 
-// getLeftbtn.addEventListener('click',changeleft())
+rightBtn.addEventListener("click", () => {
+  const containerWidth = sliderContainer.clientWidth;
+  scrollAmount += containerWidth;
+  if (scrollAmount >= sliderContainer.scrollWidth) {
+    scrollAmount = 0;
+  }
+  sliderContainer.scrollTo({
+    top: 0,
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
 
-// function changeleft() {
-//   getbookName.innerHTML = `${###}`;
-//   getauthorName.innerHTML = `${###}`;
-//   getDescribtion.innerHTML = `${###}`;
-//   getbookImg.innerHTML = `${###}`
-// }
+leftBtn.addEventListener("click", () => {
+  const containerWidth = sliderContainer.clientWidth;
+  scrollAmount -= containerWidth;
+  if (scrollAmount < 0) {
+    scrollAmount = sliderContainer.scrollWidth - containerWidth;
+  }
+  sliderContainer.scrollTo({
+    top: 0,
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
+
+//** A P I  */

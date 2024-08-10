@@ -30,7 +30,7 @@
 
 .jenre li {
   flex: 0 0 auto;
-  width: calc(100% / 4); /* Show 3 items at a time */
+  width: calc(100% / 4); /* Show 4 items at a time */
   text-align: center;
   padding: 10px;
   color: var(--ctlgTextColor);
@@ -158,9 +158,9 @@
   .books {
     height: 20vh;
   }
-  /* .head_slide{
+  /*  .head_slide{  */
 
-  } */
+  } 
 @media screen and (min-width: 1250px) and (max-width: 1500px) {
   .books {
    height: 23vh;
