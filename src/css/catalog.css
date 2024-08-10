@@ -161,4 +161,8 @@
   /* .head_slide{
 
   } */
+@media screen and (min-width: 1250px) and (max-width: 1500px) {
+  .books {
+   height: 23vh;
+  }
 }
