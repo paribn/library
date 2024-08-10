@@ -8,11 +8,13 @@ const bookNameInput = document.querySelector(".addBookName");
 const authorNameInput = document.querySelector(".addAuthorName");
 const bookImageUrlInput = document.querySelector(".bookImgUrl");
 const descBookInput = document.querySelector(".descBook");
-const genreSelect = document.querySelector("#genreSelect");
+const genreSelectAdd = document.querySelector(".genreSelect");
 const addBookBtn = document.querySelector(".addBookBtn");
 const isBest = document.querySelector(".isBest");
 const isNewCheck = document.querySelector(".isNewCheck");
-const genreAdd = document.querySelector(".genreAdd");
+const genreAdd = document.querySelector(".addBookInput");
+const plus_sign = document.querySelector("#plus_sign");
+const genreContainer = document.querySelector(".genreContainer");
 
 const bookGenres = [
   "Adventure",
@@ -40,7 +42,7 @@ bookGenres.forEach((genre) => {
   let option = document.createElement("option");
   option.value = genre;
   option.textContent = genre;
-  genreSelect.appendChild(option);
+  genreSelectAdd.appendChild(option);
 });
 searchBtn.addEventListener("click", () => {
   let inputValue = searchInput.value;
@@ -57,28 +59,38 @@ addBookBtn.addEventListener("click", function () {
   let inNew = isNewCheck.checked;
   let addisBest = isBest.checked;
 
-  let isEmpty = false;
-
-  for (let i = 0; i < genreSelect.length; i++) {
-    genreSelect[i].style = "border:1px solid black";
-  }
-
-  for (let j = 0; j < genreSelect.length; j++) {
-    if (genreSelect[j].value === "") {
-      genreSelect[j].style = "border: 1px solid red";
-      isEmpty = true;
-    }
-  }
-
-  if (isEmpty) {
+  if (!bookTitleAdd || !authorAdd || !addImg || !addDect) {
     alert("Please fill in all fields");
     return;
   }
 
+  // let isEmpty = false;
+
+  // for (let i = 0; i < genreSelectAdd.length; i++) {
+  //   genreSelectAdd[i].style = "border:1px solid black";
+  // }
+
+  // for (let j = 0; j < genreSelectAdd.length; j++) {
+  //   if (genreSelectAdd[j].value === "") {
+  //     genreSelectAdd[j].style = "border: 1px solid red";
+  //     isEmpty = true;
+  //   }
+  // }
+
+  // if (isEmpty) {
+  //   alert("Please fill in all fields");
+  //   return;
+  // }
+
   let genreArr = [];
-  let genreSelect = genreAdd;
+  // let genreSelect = genreSelectAdd;
+  let genreSelect = document.querySelectorAll(".genreSelect");
   for (let i = 0; i < genreSelect.length; i++) {
     genreArr.push(genreSelect[i].value);
+  }
+  if (genreArr.length === 0) {
+    alert("Please select at least one genre");
+    return;
   }
 
   let date = new Date();
@@ -123,9 +135,9 @@ function addData(items) {
   resultContainer.innerHTML = items
     .map((aryData) => {
       return `
-        <div class="result_box" data-title="${
+        <div class="result_box" data-title="${encodeURI(
           aryData.volumeInfo.title
-        }" data-author="${
+        )}" data-author="${
         aryData.volumeInfo.authors
           ? aryData.volumeInfo.authors[0]
           : "Unknown Author"
@@ -148,7 +160,7 @@ function addData(items) {
   const resultBoxes = document.querySelectorAll(".result_box");
   resultBoxes.forEach((box) => {
     box.addEventListener("click", (event) => {
-      const title = event.currentTarget.getAttribute("data-title");
+      const title = decodeURI(event.currentTarget.getAttribute("data-title"));
       const author = event.currentTarget.getAttribute("data-author");
       const image = event.currentTarget.getAttribute("data-image");
       const description = event.currentTarget.getAttribute("data-description");
@@ -162,3 +174,21 @@ function addData(items) {
     });
   });
 }
+
+plus_sign.addEventListener("click", () => {
+  console.log("plus");
+
+  let newSelect = document.createElement("select");
+
+  newSelect.classList.add("genreSelect");
+  newSelect.style = "width:100%";
+
+  bookGenres.forEach((genre) => {
+    let option = document.createElement("option");
+    option.value = genre;
+    option.textContent = genre;
+    newSelect.appendChild(option);
+  });
+
+  genreContainer.appendChild(newSelect);
+});
