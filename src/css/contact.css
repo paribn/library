@@ -37,6 +37,7 @@
 .address_phone input {
   flex: 1;
   padding: 10px;
+  border: 1px solid var(--formclr);
   font-size: var(--cntcinputsize);
 }
 
@@ -52,6 +53,7 @@
 .send_message textarea {
   padding: 10px;
   height: 133px;
+  border: 1px solid var(--formclr);
   width: 100%;
   font-size: var(--cntcinputsize);
 }

@@ -116,7 +116,7 @@
     width: 80%;
   }
 }
-@media screen and (min-width: 1250px) and (max-width: 1440px) {
+@media screen and (min-width: 1250px) and (max-width: 1600px) {
   .defaultContainer {
     width: 100%;
     display: flex;
