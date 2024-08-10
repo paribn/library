@@ -582,6 +582,12 @@ td {
   display: none;
 }
 
+.genreContainer,
+.addBookInput {
+  width: 100%;
+  margin: 12px 0;
+}
+
 /** media query */
 
 @media screen and (min-width: 323px) and (max-width: 767px) {

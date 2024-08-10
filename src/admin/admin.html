@@ -153,9 +153,11 @@
                 <label for="bookType">Book Type</label>
                 <button id="plus_sign">&#43;</button>
               </div>
-              <select id="genreSelect" class="genreAdd">
-                <option value="Fantastic"></option>
-              </select>
+              <div class="genreContainer">
+                <select class="addBookInput genreSelect">
+                  <option value="Fantastic"></option>
+                </select>
+              </div>
             </div>
             <button class="addBookBtn" type="submit">Add</button>
           </div>
@@ -171,7 +173,7 @@
                   class="title"
                   type="text"
                   name="title"
-                  value="About Store"
+                  placeholder="About Store"
                 />
               </div>
               <div class="authorName">
@@ -180,14 +182,13 @@
                   class="bookImgUrl"
                   type="url"
                   name="image-url"
-                  value="https://image.url/"
+                  placeholder="https://image.url/"
                 />
               </div>
               <div class="description">
                 <label for="description2">Description</label>
                 <textarea class="bookDescription" name="description2">
- We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...</textarea
-                >
+                </textarea>
               </div>
               <button class="aboutAdd" type="submit">About info add</button>
             </div>
@@ -373,7 +374,7 @@
         </section>
       </section>
     </main>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
