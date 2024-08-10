@@ -1,0 +1,214 @@
+.mainSection {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 76px;
+}
+
+/*& LEFT */
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding-top: 7%;
+  width: 100%;
+}
+
+.leftDiv h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.leftDiv input {
+  width: 370px;
+  height: 60px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  font-size: 23px;
+  font-weight: 400;
+  padding-left: 27px;
+}
+
+.leftDiv button {
+  width: 370px;
+  height: 60px;
+  background-color: #e16a00;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.searchBtn:hover {
+  transform: var(--btn-scale);
+  transition: all 0.5s;
+  box-shadow: var(--btn-shadow-color);
+}
+
+/*& RIGHT */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookImg {
+  width: 220px;
+  max-height: 450px;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 450px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.textDiv h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.textDiv p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.textDiv span {
+  font-size: 14px;
+  font-weight: 400px;
+  width: 457px;
+  line-height: 27px;
+}
+
+.swiperBooks {
+  padding: 20px;
+  width: 100%;
+}
+
+.rightDiv {
+  margin-top: 15%;
+  width: 75%;
+}
+
+.bookList {
+  box-shadow: 0px 4px 11px #00000040;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 90%;
+}
+
+.bookBtn {
+  cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #720418;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .mainSection {
+    width: 90%;
+    flex-direction: column;
+    background-color: #fffaf6;
+  }
+
+  .swiper-slide {
+    flex-direction: column;
+  }
+
+  .leftDiv h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .leftDiv input,
+  .leftDiv button {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bookImg {
+    width: 100%;
+  }
+
+  .textDiv h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .textDiv p,
+  .textDiv span {
+    text-align: center;
+    width: 100%;
+  }
+
+  .rightDiv {
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .bookName {
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .bookList {
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #fffaf6;
+  }
+
+  .bookBtn {
+    display: none;
+  }
+
+  .bookBtnRight {
+    display: none;
+  }
+
+  .bookBtnLeft {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .bookTitle {
+    max-height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  /*& FOOTER  */
+
+}

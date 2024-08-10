@@ -95,19 +95,29 @@
       <section class="contact_section">
         <p class="Contact">Contact Us</p>
         <div class="name_mail">
-          <input placeholder="Full Name" type="text" /><input
-            placeholder="Email"
-            type="email"
-          />
+          <input
+            id="fullname"
+            placeholder="Full Name"
+            type="text"
+            required
+          /><input id="email" placeholder="Email" type="email" required />
         </div>
         <div class="address_phone">
-          <input placeholder="Address" type="text" /><input
-            placeholder="Phone"
+          <input
+            id="address"
+            placeholder="Address"
             type="text"
-          />
+            required
+          /><input placeholder="Phone" type="text" required />
         </div>
         <div class="send_message">
-          <textarea class="note" placeholder="Note..." name="" id=""></textarea>
+          <textarea
+            class="note"
+            placeholder="Note..."
+            name=""
+            id=""
+            required
+          ></textarea>
           <button class="send_btn">Send</button>
         </div>
       </section>

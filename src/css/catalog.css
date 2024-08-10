@@ -30,7 +30,7 @@
 
 .jenre li {
   flex: 0 0 auto;
-  width: calc(100% / 4); /* Show 3 items at a time */
+  width: calc(100% / 4); /* Show 4 items at a time */
   text-align: center;
   padding: 10px;
   color: var(--ctlgTextColor);
