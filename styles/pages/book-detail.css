@@ -1,0 +1,193 @@
+.book__detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.book__detail .book__info .go__back {
+  width: fit-content;
+  background: #e16a00;
+  filter: drop-shadow(0px 3px 8px rgba(225, 106, 0, 0.19));
+  padding: 10px 12px;
+  border-radius: 4px;
+  margin-bottom: 80px;
+}
+
+.book__detail .book__info .go__back span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.book__detail .book__info .details .book__year {
+  width: fit-content;
+  background: #2f80ed;
+  filter: drop-shadow(0px 3px 8px rgba(225, 106, 0, 0.19));
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+.book__detail .book__info .details .book__year span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+.book__detail .book__info .details .book__name {
+  color: #241400;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+.book__detail .book__info .details .book__created {
+  color: #241400;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.book__detail .book__info .details .book__author {
+  color: #241400;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 4px 0 12px;
+}
+.book__detail .book__info .details .book__description {
+  color: #241400;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.comment__box {
+  max-width: 800px;
+}
+
+.comment__box .create__box {
+  position: relative;
+}
+
+.comment__box .create__box .submit__comment {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 5px;
+  background: #e16a00;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.comment__box .create__box input {
+  width: 100%;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  padding: 16px 24px;
+}
+
+.comment__box .comments {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.comment__box .comments .comment {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 32px;
+}
+
+.comment__box .comments .comment .comment__head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.comment__box .comments .comment .comment__head .user {
+  color: #232323;
+  font-size: 16px;
+  font-weight: 500;
+}
+.comment__box .comments .comment .comment__head .created {
+  color: #232323;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.comment__box .comments .comment .comment__description {
+  color: #232323;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 1280px) {
+  .book__detail {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .book__detail .book__image {
+    width: 100%;
+  }
+
+  .book__detail .book__image img {
+    width: 100%;
+  }
+
+  .book__detail .book__info .go__back {
+    display: none;
+  }
+
+  .book__detail .book__info .details .book__year {
+    margin: 24px 0 48px;
+  }
+
+  .book__detail .book__info .details .book__name {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .book__detail .book__info .details .book__created {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .book__detail .book__info .details .book__author {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .book__detail .book__info .details .book__description {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .comment__box .comments .comment .comment__description {
+    font-size: 14px;
+  }
+
+  .comment__box .comments .comment {
+    padding: 12px 20px;
+  }
+
+  .comment__box .comments .comment .comment__head {
+    gap: 16px;
+  }
+
+  .comment__box .comments .comment .comment__head .user {
+    font-size: 14px;
+  }
+
+  .comment__box .comments .comment .comment__head .created {
+    font-size: 14px;
+  }
+}

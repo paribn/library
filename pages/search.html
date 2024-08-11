@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="icon" href="../images/header/logo-red.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Search page</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div>
+          <img src="../images/header/logo.svg" alt="Logo" />
+        </div>
+        <nav id="navigation">
+          <div class="close__navigation" id="closeBurgerButton">
+            <img src="../images/header/close.svg" alt="Logo" />
+          </div>
+          <a class="navigation" href="../index.html">
+            <span>Home</span>
+          </a>
+          <a class="navigation" href="../pages/catalog.html">
+            <span>Catalog</span>
+          </a>
+          <a class="navigation" href="../pages/about.html">
+            <span>About Store</span>
+          </a>
+          <a class="navigation" href="../pages/contact.html">
+            <span>Contact Us</span>
+          </a>
+          <a class="navigation" href="../pages/search.html">
+            <span class="active">Search</span>
+          </a>
+        </nav>
+        <div class="header__right">
+          <button class="join__us" id="join__button">
+            <img src="/images/header/join_us-icon.svg" alt="icon" />
+            <span>Join us</span>
+          </button>
+          <div class="burger__icon" id="burgerButton">
+            <img src="/images/header/burger.svg" alt="Logo" />
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <p class="other__title">Search</p>
+        <div class="search__section">
+          <form class="search__box" id="searchForm">
+            <input placeholder="Order in Chaos" name="search" />
+            <button>
+              <span>Search</span>
+            </button>
+          </form>
+          <div class="slider__box">
+            <div class="swiper">
+              <div class="swiper-wrapper" id="resultBox"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="title">Follow us on social media</h2>
+        <div class="socials">
+          <div>
+            <img
+              src="../images/shared/follow/facebook.svg"
+              alt="Follow icons"
+            />
+          </div>
+          <div>
+            <img src="../images/shared/follow/twitter.svg" alt="Follow icons" />
+          </div>
+          <div>
+            <img
+              src="../images/shared/follow/instagram.svg"
+              alt="Follow icons"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="modal" id="modal">
+        <div class="modal__bg" id="outerBox"></div>
+        <div class="modal__box">
+          <p class="modal__title">Join Us</p>
+          <form id="joinUsForm">
+            <div class="inputs">
+              <input placeholder="Full name" name="fullName" required />
+              <input placeholder="Email" name="email" required />
+            </div>
+            <button>
+              <span>Join</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__box container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <img src="../images/footer/logo_white.svg" alt="Logo" />
+          </div>
+
+          <div class="footer__navigation">
+            <div class="navigation">
+              <p class="title">Popular</p>
+              <p>Programming</p>
+              <p>Books for children</p>
+              <p>Psychology</p>
+              <p>Business</p>
+            </div>
+            <div class="navigation">
+              <p class="title">Cash</p>
+              <p>Delivery</p>
+              <p>Payment</p>
+              <p>About the store</p>
+            </div>
+            <div class="navigation">
+              <p class="title">Help</p>
+              <p>Contacts</p>
+              <p>Purchase returns</p>
+              <p>Buyer help</p>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../scripts/main.js" type="module"></script>
+  <script src="../scripts/search.js" type="module"></script>
+
+  <script type="module">
+    new Swiper(".swiper", {
+      loop: true,
+
+      spaceBetween: 24,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
