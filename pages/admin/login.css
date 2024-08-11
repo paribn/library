@@ -43,7 +43,6 @@
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -92,8 +91,7 @@ main {
 
 /* media query */
 
-@media screen and  (min-width: 323px) and (max-width: 767px) {
-
+@media screen and (min-width: 323px) and (max-width: 767px) {
   .header_box {
     margin: 20px 0 0 20px;
     gap: 4px;
@@ -203,7 +201,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1281px) and (max-width: 1440px) { 
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
   .header_box {
     margin: 20px 0 0 20px;
     gap: 4px;

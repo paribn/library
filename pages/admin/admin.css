@@ -897,7 +897,7 @@ td {
 
   .left_box {
     width: 40%;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .logo {
     display: flex;
