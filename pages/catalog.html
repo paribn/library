@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="icon" href="./images/header/logo-red.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page</title>
+    <link rel="icon" href="../images/header/logo-red.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="../images/header/logo-red.svg" />
+
+    <title>Catalog page</title>
   </head>
   <body>
     <main class="container">
@@ -17,11 +22,11 @@
           <div class="close__navigation" id="closeBurgerButton">
             <img src="../images/header/close.svg" alt="Logo" />
           </div>
-          <a class="navigation" href="../pages/index.html">
-            <span class="active">Home</span>
+          <a class="navigation" href="../index.html">
+            <span>Home</span>
           </a>
           <a class="navigation" href="../pages/catalog.html">
-            <span>Catalog</span>
+            <span class="active">Catalog</span>
           </a>
           <a class="navigation" href="../pages/about.html">
             <span>About Store</span>
@@ -45,87 +50,37 @@
       </header>
 
       <section>
-        <div class="home__head">
-          <div class="info">
-            <p class="home__title">Books from A to Z</p>
-            <p class="home__subtitle">
-              In our store you can find a book for every taste. A large
-              assortment. Nice prices. Interesting stories.
-            </p>
-            <button>
-              <span>Go to catalog</span>
-            </button>
-          </div>
-          <div class="home__background">
-            <img src="/images/pages/home/home_bg.png" alt="Home background" />
-          </div>
+        <div class="catalog__head">
+          <p class="other__title">All Books</p>
+          <div class="catalog__genres" id="genres"></div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper" id="allBooks"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
+
       <section>
-        <h2 class="title">Catalog</h2>
-        <div class="catalogs">
-          <div class="catalog__element">
-            <span>Books</span>
-          </div>
-          <div class="catalog__element">
-            <span>Electronic books</span>
-          </div>
-          <div class="catalog__element">
-            <span>Audiobooks</span>
-          </div>
-          <div class="catalog__element">
-            <span>Toys, creativity</span>
-          </div>
-          <div class="catalog__element">
-            <span>Book accessories</span>
-          </div>
-          <div class="catalog__element">
-            <span>Notepads</span>
-          </div>
-          <div class="catalog__element">
-            <span>Board games</span>
-          </div>
-          <div class="catalog__element">
-            <span>Present</span>
-          </div>
-          <div class="catalog__element">
-            <span>Stock</span>
-          </div>
+        <p class="title">Besteller</p>
+
+        <div class="swiper">
+          <div class="swiper-wrapper" id="besteller"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
+
       <section>
-        <h2 class="title">About Store</h2>
-        <div class="store__information">
-          <div class="info__box">
-            <p class="info__title">1</p>
-            <p class="info__description">Branches the country</p>
-          </div>
-          <div class="info__box">
-            <p class="info__title" id="products">0</p>
-            <p class="info__description">Products catalog</p>
-          </div>
-          <div class="info__box">
-            <p class="info__title" id="buyers">0</p>
-            <p class="info__description">Buyers</p>
-          </div>
-          <div class="info__box">
-            <p class="info__title">6</p>
-            <p class="info__description">Hours delivery to cities</p>
-          </div>
+        <p class="title">New releases</p>
+
+        <div class="swiper">
+          <div class="swiper-wrapper" id="newReleases"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
-      <section>
-        <h2 class="title">Delivery</h2>
-        <p class="description">
-          We work without holidays and weekends! Residents of Kiev can receive
-          an order on the day of its registration. Customers from other cities
-          of Ukraine can receive an order within 1-5 days, depending on the
-          location of the settlement and the selected delivery method. Orders
-          over UAH 1000 are delivered free of charge *. You can see the
-          available methods, exact terms and cost of delivery during checkout in
-          the order basket, aafter selecting the delivery city. More details
-        </p>
-      </section>
+
       <section>
         <h2 class="title">Follow us on social media</h2>
         <div class="socials">
@@ -163,12 +118,11 @@
         </div>
       </div>
     </main>
-
     <footer>
       <div class="footer__box container">
         <div class="footer__inner">
           <div class="footer__logo">
-            <img src="/images/footer/logo_white.svg" alt="Logo" />
+            <img src="../images/footer/logo_white.svg" alt="Logo" />
           </div>
 
           <div class="footer__navigation">
@@ -199,7 +153,35 @@
       </div>
     </footer>
   </body>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../scripts/main.js" type="module"></script>
-  <script src="../scripts/home.js" type="module"></script>
+  <script src="../scripts/catalog.js" type="module"></script>
+
+  <script type="module">
+    new Swiper(".swiper", {
+      loop: true,
+      slidesPerView: 1.5,
+
+      breakpoints: {
+        480: {
+          slidesPerView: 2.4,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        993: {
+          slidesPerView: 5,
+        },
+        1280: {
+          slidesPerView: 6,
+        },
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>
