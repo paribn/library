@@ -26,12 +26,24 @@
     </header>
     <main>
       <section class="container">
-        <div class="container_input">
+        <form class="container_input" id="loginForm">
           <h1>Welcome Admin</h1>
-          <input class="input" placeholder="Username" type="text" />
-          <input class="input" placeholder="Password" type="password" />
+          <input
+            class="input"
+            placeholder="Username"
+            type="text"
+            name="user"
+            required
+          />
+          <input
+            class="input"
+            placeholder="Password"
+            type="password"
+            name="password"
+            required
+          />
           <button class="joinUsadminPage">Join</button>
-        </div>
+        </form>
       </section>
     </main>
     <script src="../admin/admin.js" type="module"></script>
