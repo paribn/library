@@ -28,16 +28,22 @@ const getResult = (result) => {
 };
 
 get();
-
 const search = async (event) => {
   event.preventDefault();
 
   const keys = Object.keys(books);
-  const search = searchForm.elements.namedItem("search").value;
+  const search = searchForm.elements
+    .namedItem("search")
+    .value.trim()
+    .toLowerCase();
   resultBox.innerHTML = "";
 
-  keys.map((key) => {
-    if (books[key].title.includes(search)) {
+  keys.forEach((key) => {
+    if (
+      books[key].title.toLowerCase().includes(search) ||
+      books[key].author.toLowerCase().includes(search) ||
+      books[key].description.toLowerCase().includes(search)
+    ) {
       getResult(books[key]);
     }
   });

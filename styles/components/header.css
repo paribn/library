@@ -63,6 +63,7 @@ header .header__right {
     top: 0;
     background: rgba(36, 20, 0, 0.9);
     padding: 24px;
+    z-index: 100;
   }
 
   header nav.active {
