@@ -205,6 +205,7 @@ async function populateJoinUsTable() {
     btn.addEventListener("click", () => {
       deleteData(`joinUs/${joinUsData[i].id}`);
       alert("Delete succesfuly!");
+      window.location.reload();
     });
   });
 }
